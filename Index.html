@@ -2,9 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Alien Bag</title>
 </head>
+<script src="js/EventCards.js"></script>
+<script src="js/AlienAttackCards.js"></script>
+<script src="js/AlienTokens.js"></script>
+<script src="js/Game.js"></script>
 <body>
+Alien Bag
+
+<div id="playerSelector">
+    <h1>How Many Players?</h1>
+    <button onclick="setupAlienBag(1)">1</button>
+    <button onclick="setupAlienBag(2)">2</button>
+    <button onclick="setupAlienBag(3)">3</button>
+    <button onclick="setupAlienBag(4)">4</button>
+    <button onclick="setupAlienBag(5)">5</button>
+</div>
+
+<div>
+    <h1>Shuffling:</h1>
+    <button onclick="shuffleBag()">Shuffle Bag</button>
+    <button onclick="shuffleEventDeck()">Shuffle Event Deck</button>
+    <button onclick="shuffleAttackDeck()">Shuffle Attack Deck</button>
+</div>
+<div id="playerTurnWindows" style="display: none">
+<div id="bagWindow" >
+    <h1>Summon Intruders:</h1>
+    <button onclick="spawnAlien()">Draw from bag</button>
+    <div id="bagInfo">
+        <p>Token Name:  <div id="tokenName"></div></p>
+        <p>Danger Level: <div id="dangerLevel"></div></p>
+        <p>Token Description: <div id="tokenDescription"></div></p>
+    </div>
+</div>
+
+<div id="attackWindow">
+    <h1>Resolve Intruder Attack:</h1>
+    <button onclick="resolveAnAttack(2)">Creeper Attack</button>
+    <button onclick="resolveAnAttack(3)">Adult Attack</button>
+    <button onclick="resolveAnAttack(4)">Breeder Attack</button>
+    <button onclick="resolveAnAttack(5)">Queen Attack</button>
+    <div id="attackInfo">
+        <p>Attack Name:  <div id="attackName"></div></p>
+        <p>Attack Description:  <div id="attackDesc"></div></p>
+    </div>
+</div>
+<div id="healthWindow">
+    <h1>Intruder Health:</h1>
+    <h2><div id="healthAmount"></div></h2>
+    <button onclick="resolveHealthCheck(1)">Creeper & Adult Health</button>
+    <button onclick="resolveHealthCheck(2)">Breeder & Queen Health</button>
+    <div id="healthInfo">
+        </div>
+</div>
+</div>
+<div id="eventWindows">
+    <h1>Event Phase</h1>
+<button onclick="resolveEvent()">Resolve Event Phase</button>
+<div id="movement">
+    <p><div id="movers"></div>move(s) to direction: <div id="direction"></div></p>
+</div>
+<div id="eventInfo">
+<h3>Event Name:<div id="eventName"></div></h3>
+<p>Event description: <div id="eventDesc"></div></p>
+</div>
+
+
+</div>
+
+
+
 
 </body>
 </html>
