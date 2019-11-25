@@ -319,7 +319,7 @@ EventCards = [
         "QueenMove": false,
         "CardName": "Lurking",
         "RealCardText": "Remove all Intruders which are not in a Room with any Character from the board. Put their respective tokens into the Intruder bag.",
-        "AppCardText": "Remove all Intruders which are not in a Room with any Character from the board.",
+        "AppCardText": "Remove all Intruders which are not in a Room with any Character from the board. Put their respective tokens into the Intruder bag (manually).",
         "RemoveAndReshuffleDeck": false,
         "ReshuffleBack": false,
         "AlienBagSpecialCase": true,

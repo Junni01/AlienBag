@@ -43,6 +43,7 @@ console.log(alienBag)
 document.getElementById("playerSelector").style.display = 'none';
 document.getElementById("playerTurnWindows").style.display = '';
 document.getElementById("eventWindows").style.display = '';
+document.getElementById("shuffleFooter").style.display = ''
 
 };
 
@@ -233,9 +234,9 @@ function resolveEvent() {
     if(eventCard.AlienBagSpecialCase && eventCard.SpecialCaseID == 1) {
         document.getElementById("addTokensDialog1").style.display = '';
 
-    } else if(eventCard.AlienBagSpecialCase && eventCard.SpecialCaseID == 2){
+    } /*else if(eventCard.AlienBagSpecialCase && eventCard.SpecialCaseID == 2){
         document.getElementById("addTokensDialog2").style.display = '';
-    }
+    }*/
 };
 
 function addTokensToBag(type, amount) {
@@ -271,18 +272,20 @@ function addTokensToBag(type, amount) {
     shuffleBag();
 
     document.getElementById("addTokensDialog1").style.display = 'none';
-    document.getElementById("addTokensDialog2").style.display = 'none';
+    // document.getElementById("addTokensDialog2").style.display = 'none';
     document.getElementById("queenAttackDialog").style.display = 'none';
+
 
 }
 
 function initiateBagDevelopment() {
     let bagToken = alienBag.pop()
+    console.log("Drew token from bag:")
+    console.log(bagToken)
     document.getElementById("bagDevMessage").innerText = bagToken.BagDevelopmentEffectTextApp;
     switch(bagToken.AlienId) {
         case 1: if(adultPile.length > 0) {
             alienBag.push(adultPile.pop())
-
         }
         larvaPile.push(bagToken);
         break;
@@ -300,7 +303,7 @@ function initiateBagDevelopment() {
             break;
         case 5:
             document.getElementById("queenAttackDialog").style.display = '';
-
+        break;
         case 6: if(adultPile.length > 0) {
             alienBag.push(adultPile.pop())
         }

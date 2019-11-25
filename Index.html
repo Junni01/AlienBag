@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content= "width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Alien Bag</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <script src="js/EventCards.js"></script>
 <script src="js/AlienAttackCards.js"></script>
@@ -15,135 +16,184 @@
 <body>
     <div class="container-fluid">
 
-        <div class="row">
-            <div class="col-sm-6">
-                <div id="playerSelector">
+        <div class="row" id="playerSelector">
+            <div class="col-sm-12 text-center">
+                <div>
                     <h1>How Many Players?</h1>
-                    <button onclick="setupAlienBag(1)">1</button>
-                    <button onclick="setupAlienBag(2)">2</button>
-                    <button onclick="setupAlienBag(3)">3</button>
-                    <button onclick="setupAlienBag(4)">4</button>
-                    <button onclick="setupAlienBag(5)">5</button>
+                    <button type="button" class="btn btn-secondary" onclick="setupAlienBag(1)">1</button>
+                    <button type="button" class="btn btn-secondary" onclick="setupAlienBag(2)">2</button>
+                    <button type="button" class="btn btn-secondary" onclick="setupAlienBag(3)">3</button>
+                    <button type="button" class="btn btn-secondary" onclick="setupAlienBag(4)">4</button>
+                    <button type="button" class="btn btn-secondary" onclick="setupAlienBag(5)">5</button>
                 </div>
-            </div>
-            <div class="col-sm-6">
-                <h1>Shuffling:</h1>
-                <button onclick="shuffleBag()">Shuffle Bag</button>
-                <button onclick="shuffleEventDeck()">Shuffle Event Deck</button>
-                <button onclick="shuffleAttackDeck()">Shuffle Attack Deck</button>
             </div>
         </div>
         <div class="row" id="playerTurnWindows" style="display: none">
 
+            <div class="col-sm-12">
+                <div class="card-deck">
+                <div id="bagWindow" class="card">
 
-            <div class="col-sm-4">
-                <div id="bagWindow">
-                    <h1>Summon Intruders:</h1>
-                    <button onclick="spawnAlien()">Draw from bag</button>
-                    <div id="bagInfo">
-                        <p>Token Name: <div id="tokenName"></div>
-                        </p>
-                        <p>Danger Level: <div id="dangerLevel"></div>
-                        </p>
-                        <p>Token Description: <div id="tokenDescription"></div>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div id="attackWindow">
-                    <h1>Resolve Intruder Attack:</h1>
-                    <button onclick="resolveAnAttack(2)">Creeper Attack</button>
-                    <button onclick="resolveAnAttack(3)">Adult Attack</button>
-                    <button onclick="resolveAnAttack(4)">Breeder Attack</button>
-                    <button onclick="resolveAnAttack(5)">Queen Attack</button>
-                    <div id="attackInfo">
-                        <p>Attack Name: <div id="attackName"></div>
-                        </p>
-                        <p>Attack Description: <div id="attackDesc"></div>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div id="healthWindow">
-                    <h1>Intruder Health:</h1>
-                    <h2>
-                        <div id="healthAmount"></div>
-                    </h2>
-                    <button onclick="resolveHealthCheck(1)">Creeper & Adult Health</button>
-                    <button onclick="resolveHealthCheck(2)">Breeder & Queen Health</button>
-                    <div id="healthInfo">
-                    </div>
-                </div>
-            </div>
 
-        </div>
-        <div class="row" id="eventWindows" style="display: none">
-            <div class="col-sm-4">
-                    <h1>Event Phase</h1>
-                    <button onclick="resolveEvent()">Resolve Event Phase</button>
-                <div id="movement">
-                    <p>
-                        <div id="movers"></div>move(s) to direction: <div id="direction"></div>
-                    </p>
-                </div>
-                <div id="eventInfo">
-                    <h3>Event Name:<div id="eventName"></div>
-                    </h3>
-                    <p>Event description: <div id="eventDesc"></div>
-                    </p>
-                </div>
-                <div id="addTokensDialog1" style="display: none">
-                    <p>Was someone infested?</p>
-                    <button onclick="addTokensToBag(0, 0)">Yes</button>
-                    <button onclick="addTokensToBag(1, 1)">No</button>
-                </div>
-                <div id="addTokensDialog2" style="display: none">
-                    <p>Return tokens to bag</p>
-                    <p>Larvae</p><input>
-                    <p>Creeper</p><input>
-                    <p>Adult</p><input>
-                    <p>Breeder</p><input>
-                    <p>Queen</p><input>
-                    <button onclick="addTokensToBag(2, 3)">Add</button>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div id="bagDevelopmentWindow">
-                    <h1>Bag development</h1>
-                    <button onclick="initiateBagDevelopment()">Resolve Bag development</button>
-                    <p>
-                        <div id="bagDevMessage"></div>
-                    </p>
-                    <div id="queenAttackDialog" style="display: none">
-                        <p>Was queen spawned?</p>
-                        <button onclick="addTokensToBag(0, 0)">Yes</button>
-                        <button onclick="addTokensToBag(5, 1)">No</button>
+                    <h5 class="card-header text-center">Summon Intruders</h5>
+
+                    <div class="card-body">
+                    <div class="card-text text-center" id="bagInfo" style="font-size: 20px">
+                    <b>Token:</b> <div id="tokenName"> </div>
+                    <b>Danger Level:</b> <div id="dangerLevel"> </div>
+                    <b>Description:</b> <div id="tokenDescription"> </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div id="bagAddWindow">
-                    <div id="addTokensDialog3">
-                        <h1>Add tokens to bag</h1>
-                        <p>Larvae</p><input type="number" id="larvaInput" class="form-control form-control-sm" value="0" min="0">
-                        <p>Creeper</p><input type="number" id="creeperInput" class="form-control form-control-sm" value="0" min="0">
-                        <p>Adult</p><input type="number" id="adultInput" class="form-control form-control-sm" value="0" min="0">
-                        <p>Breeder</p><input type="number" id="breederInput" class="form-control form-control-sm" value="0" min="0">
-                        <p>Queen</p><input type="number" id="queenInput" class="form-control form-control-sm" value="0" min="0" max="1">
-                        <button onclick="addAliens()">Add</button>
                         
                     </div>
+                    <div class="card-footer text-center">
+                        <button type="button" class="btn btn-secondary" onclick="spawnAlien()">Summon</button>
+                    </div>
+                </div>
+
+
+                <div id="attackWindow" class="card">
+                    <h5 class="card-header text-center" >Intruder Attack</h5>
+                    <div class="card-body">
+                    
+                    <div class="card-text text-center" id="attackInfo" style="font-size: 20px">
+                        <b>Attack Name:</b> <div id="attackName"></div>
+                        <b>Attack Description:</b> <div id="attackDesc"></div>
+                    </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button type="button" class="btn btn-secondary" onclick="resolveAnAttack(2)">Creeper</button>
+                        <button type="button" class="btn btn-secondary" onclick="resolveAnAttack(3)">Adult</button>
+                        <button type="button" class="btn btn-secondary" onclick="resolveAnAttack(4)">Breeder</button>
+                        <button type="button" class="btn btn-secondary" onclick="resolveAnAttack(5)">Queen</button>
+                    </div>
+                </div>
+
+
+                <div id="healthWindow" class="card">
+                    <h5 class="card-header text-center">Intruder Health</h5>
+
+                    <div class="card-body text-center">
+
+                            <div id="healthAmount" style="font-size: 50px"></div>
+
+                        <div id="healthInfo">
+                        </div>
+                    </div>
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-secondary" onclick="resolveHealthCheck(1)">Creeper/Adult</button>
+                            <button type="button" class="btn btn-secondary" onclick="resolveHealthCheck(2)">Breeder/Queen</button>
+                        </div>
+                        
+
+                </div>
+            </div>
+            </div>
+        </div>
+        <br>
+        <div class="row" id="eventWindows" style="display: none">
+            <div class="col-sm-12">
+                <div class="card-deck">
+
+                    <div class="card">
+                        <h5 class="card-header text-center">Event</h5>
+                        <div class="card-body text-center">
+                            <div id="movement">
+                                <div id="movers"></div> move(s) to direction: <div id="direction"></div>
+                            </div>
+                            <div id="eventInfo">
+                                <b>Event Name:</b>
+                                <div id="eventName"></div>
+
+                                <b>Event description:</b>
+                                <div id="eventDesc"></div>
+
+                            </div>
+                            <div id="addTokensDialog1" style="display: none">
+                                <p>Was someone infested?</p>
+                                <button type="button" class="btn btn-secondary" onclick="addTokensToBag(0, 0)">Yes
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="addTokensToBag(1, 1)">No
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-secondary" onclick="resolveEvent()">Draw Event
+                            </button>
+                        </div>
+                        
+                        
+                        <!--                    <div id="addTokensDialog2" style="display: none">-->
+                        <!--                        <p>Return tokens to bag</p>-->
+                        <!--                        <p>Larvae</p><input>-->
+                        <!--                        <p>Creeper</p><input>-->
+                        <!--                        <p>Adult</p><input>-->
+                        <!--                        <p>Breeder</p><input>-->
+                        <!--                        <p>Queen</p><input>-->
+                        <!--                        <button type="button" class="btn btn-secondary" onclick="addTokensToBag(2, 3)">Add</button>-->
+                        <!--                    </div>-->
+                    </div>
+                    <div class="card" id="bagDevelopmentWindow">
+                        <h5 class="card-header">Bag development</h5>
+
+                        <div class="card-body">
+
+
+                            <p class="card-text">
+                            <div id="bagDevMessage"></div>
+                            </p>
+                            <div id="queenAttackDialog" style="display: none">
+                                <p>Was queen spawned?</p>
+                                <button type="button" class="btn btn-secondary" onclick="addTokensToBag(0, 0)">Yes
+                                </button>
+                                <button type="button" class="btn btn-secondary" onclick="addTokensToBag(5, 1)">No
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-secondary" onclick="initiateBagDevelopment()">Draw
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card" id="bagAddWindow">
+                        <h5 class="card-header text-center">Add tokens to bag</h5>
+                        <div id="addTokensDialog3" class="card-body">
+
+                            <div class="row"><div class="col-sm-6">Larva</div><input type="number" id="larvaInput" class="form-control form-control-sm col-sm-6"
+                                                     value="0" min="0"></div>
+                            <div class="row"><div class="col-sm-6">Creeper</div><input type="number" id="creeperInput" class="form-control form-control-sm col-sm-6"
+                                                    value="0" min="0"></div>
+                            <div class="row"><div class="col-sm-6">Adult</div><input type="number" id="adultInput" class="form-control form-control-sm col-sm-6"
+                                                  value="0" min="0"></div>
+                            <div class="row"><div class="col-sm-6">Breeder</div><input type="number" id="breederInput" class="form-control form-control-sm col-sm-6"
+                                                    value="0" min="0"></div>
+                            <div class="row"><div class="col-sm-6">Queen</div><input type="number" id="queenInput" class="form-control form-control-sm col-sm-6"
+                                                  value="0" min="0" max="1"></div>
+
+
+                        </div>
+                        <div class="card-footer text-center">
+                            <button type="button" class="btn btn-secondary" onclick="addAliens()">Add</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
 
         </div>
+<div class="row">
 
+    <div class="col-sm-12 text-center" id="shuffleFooter" style="display: none">
+    <hr>
+        <button type="button" class="btn btn-secondary" onclick="shuffleBag()">Shuffle Bag</button>
+        <button type="button" class="btn btn-secondary" onclick="shuffleEventDeck()">Shuffle Event Deck</button>
+        <button type="button" class="btn btn-secondary" onclick="shuffleAttackDeck()">Shuffle Attack Deck</button>
+    </div>
+</div>
 
     </div>
-
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 <script>
 function addAliens() {
     let larva = document.getElementById("larvaInput").value;
