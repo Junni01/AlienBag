@@ -214,22 +214,99 @@ function drawEventCard() {
     return eventCard;
 }
 
-
-
-
 function resolveEvent() {
-    event = drawEventCard()
-    console.log(event)
+    let eventCard = drawEventCard()
+    console.log(eventCard)
     let groups = "";
-    for(let group of event.Movers) {
+    for(let group of eventCard.Movers) {
         console.log(group)
       groups += alienDict[group] + ", ";
     }
 
     document.getElementById("movers").innerText = groups;
-    document.getElementById("direction").innerText = event.Direction;
-    document.getElementById("eventName").innerText = event.CardName;
-    document.getElementById("eventDesc").innerText = event.AppCardText;
+    document.getElementById("direction").innerText = eventCard.Direction;
+    document.getElementById("eventName").innerText = eventCard.CardName;
+    document.getElementById("eventDesc").innerText = eventCard.AppCardText;
+
+    if(eventCard.AlienBagSpecialCase && eventCard.SpecialCaseID == 1) {
+        document.getElementById("addTokensDialog1").style.display = '';
+
+    } else if(eventCard.AlienBagSpecialCase && eventCard.SpecialCaseID == 2){
+        document.getElementById("addTokensDialog2").style.display = '';
+    }
+};
+
+function addTokensToBag(type, amount) {
+    switch(type) {
+        case 1:
+            if(amount > 0) {
+                for(let i = 0;i < amount && larvaPile.length > 0;i++)
+                alienBag.push(larvaPile.pop())
+            }
+            break;
+        case 2:
+            if(amount > 0) {
+                for(let i = 0;i < amount && creeperPile.length > 0;i++)
+                    alienBag.push(creeperPile.pop())
+            }
+            break;
+        case 3:
+            if(amount > 0) {
+                for(let i = 0;i < amount && adultPile.length > 0;i++)
+                    alienBag.push(adultPile.pop())
+            }
+            break;
+        case 4:
+            if(amount > 0) {
+                for(let i = 0;i < amount && breederPile.length > 0;i++)
+                    alienBag.push(breederPile.pop())
+            }
+            break;
+        case 5: alienBag.push(QueenToken)
+            break;
+    }
+
+    shuffleBag();
+
+    document.getElementById("addTokensDialog1").style.display = 'none';
+    document.getElementById("addTokensDialog2").style.display = 'none';
+    document.getElementById("queenAttackDialog").style.display = 'none';
+
+}
+
+function initiateBagDevelopment() {
+    let bagToken = alienBag.pop()
+    document.getElementById("bagDevMessage").innerText = bagToken.BagDevelopmentEffectTextApp;
+    switch(bagToken.AlienId) {
+        case 1: if(adultPile.length > 0) {
+            alienBag.push(adultPile.pop())
+
+        }
+        larvaPile.push(bagToken);
+        break;
+
+        case 2: if(breederPile.length > 0) {
+            alienBag.push(breederPile.pop())
+
+        }
+        creeperPile.push(bagToken)
+        break;
+
+        case 3:
+        case 4:
+            alienBag.push(bagToken)
+            break;
+        case 5:
+            document.getElementById("queenAttackDialog").style.display = '';
+
+        case 6: if(adultPile.length > 0) {
+            alienBag.push(adultPile.pop())
+        }
+        alienBag.push(bagToken)
+        break;
+    }
+
+    shuffleBag();
 }
 
 
@@ -263,11 +340,6 @@ console.log("Resolving an attack")
             }
 
 }
-
-
-
-
-
 
 function shuffle (array) {
     console.log("S H U F F L E")

@@ -67,9 +67,38 @@ Alien Bag
 <h3>Event Name:<div id="eventName"></div></h3>
 <p>Event description: <div id="eventDesc"></div></p>
 </div>
+<div id="addTokensDialog1">
+    <p>Was someone infested?</p>
+<button onclick="addTokensToBag(0, 0)">Yes</button>
+    <button onclick="addTokensToBag(1, 1)">No</button>
+</div>
+    <div id="addTokensDialog2">
+<p>Return tokens to bag</p>
+        <p>Larvae</p><input>
+        <p>Creeper</p><input>
+        <p>Adult</p><input>
+        <p>Breeder</p><input>
+        <p>Queen</p><input>
+        <button onclick="addTokensToBag(2, 3)">Add</button>
+    </div>
+
+<div id="bagDevelopmentWindow">
+    <h1>Bag development</h1>
+    <button onclick="initiateBagDevelopment()">Resolve Bag development</button>
+    <h3><div id="bagDevMessage"></div></h3>
+    <div id="queenAttackDialog">
+        <p>Was queen spawned?</p>
+        <button onclick="addTokensToBag(0, 0)">Yes</button>
+        <button onclick="addTokensToBag(5, 1)">No</button>
+    </div>
+</div>
+
+
 
 
 </div>
+
+
 
 
 

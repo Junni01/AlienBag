@@ -323,7 +323,7 @@ EventCards = [
         "RemoveAndReshuffleDeck": false,
         "ReshuffleBack": false,
         "AlienBagSpecialCase": true,
-        "SpecialCaseID": 0
+        "SpecialCaseID": 2
     },
     {
         "ID": 17,
@@ -405,6 +405,6 @@ EventCards = [
         "RemoveAndReshuffleDeck": false,
         "ReshuffleBack": false,
         "AlienBagSpecialCase": false,
-        "SpecialCaseID": 2
+        "SpecialCaseID": 0
     }
 ]
