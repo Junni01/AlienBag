@@ -42,6 +42,8 @@ console.log("alien bag set up, contents: ");
 console.log(alienBag)
 document.getElementById("playerSelector").style.display = 'none';
 document.getElementById("playerTurnWindows").style.display = '';
+document.getElementById("eventWindows").style.display = '';
+
 };
 
 // Shuffle Decks
