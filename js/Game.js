@@ -21,6 +21,8 @@ shuffle(breederPile);
 // Token Bag
 var alienBag = [];
 
+var playerCount = 0;
+
 
 // Set up according to player amount.
 function setupAlienBag(players) {
@@ -44,6 +46,9 @@ document.getElementById("playerSelector").style.display = 'none';
 document.getElementById("playerTurnWindows").style.display = '';
 document.getElementById("eventWindows").style.display = '';
 document.getElementById("shuffleFooter").style.display = ''
+
+playerCount = players;
+document.getElementById("players").innerText = playerCount + "P";
 
 };
 
@@ -143,11 +148,14 @@ function resolveHealthCheck(type) {
         console.log("attack card:")
         console.log(card)
         if(card.AlienHealth != 0) {
-
+            document.getElementById("healthInfo").innerText = "";
+            document.getElementById("healthInfo2").innerText = "";
             document.getElementById("healthAmount").innerText = card.AlienHealth
         } else {
             let eCard = drawEventCardForRetreat()
-            document.getElementById("healthAmount").innerText = "Intruder flees, direction: " + eCard.Direction
+            document.getElementById("healthAmount").innerText ="";
+            document.getElementById("healthInfo").innerText = "Intruder flees!"
+            document.getElementById("healthInfo2").innerText = "direction: " + eCard.Direction
         }
 
     } else {
@@ -169,10 +177,14 @@ function resolveHealthCheck(type) {
         console.log(card2)
         if(card1.AlienHealth != 0 && card2.AlienHealth != 0) {
             let health = card1.AlienHealth + card2.AlienHealth
+            document.getElementById("healthInfo").innerText ="";
+            document.getElementById("healthInfo2").innerText = "";
             document.getElementById("healthAmount").innerText = health
         } else {
             let eCard = drawEventCardForRetreat()
-            document.getElementById("healthAmount").innerText = "Intruder flees, direction: " + eCard.Direction
+            document.getElementById("healthAmount").innerText ="";
+            document.getElementById("healthInfo").innerText = "Intruder flees!" 
+            document.getElementById("healthInfo2").innerText = "direction: " + eCard.Direction
         }
 
         console.log("discarding card")

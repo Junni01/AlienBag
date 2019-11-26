@@ -7,9 +7,11 @@ background-color: black;
     background-color: black
 }
 .modal-body {
-    background-color: dimgrey
+    background-color: white;
 }
-
+.modal-footer {
+    background: black;
+}
 .modalConfirmButton {
     color: black;
     
@@ -22,4 +24,22 @@ background-color: black;
 
 .modal-full .modal-content {
     min-height: 100vh;
+}
+.card-deck {
+    margin-top: 5px
+}
+.card-header {
+    color: white;
+    background: black;
+}
+.card-footer {
+    color: white;
+    background: black;
+}
+
+#playerCountText {
+    color: white
+}
+.playerSelector {
+    margin: 10px;
 }
