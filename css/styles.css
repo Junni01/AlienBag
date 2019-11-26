@@ -1,3 +1,25 @@
-.card {
-    height: 450px;
+
+body {
+background-color: black;
+}
+
+.modal {
+    background-color: black
+}
+.modal-body {
+    background-color: dimgrey
+}
+
+.modalConfirmButton {
+    color: black;
+    
+}
+
+.modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+
+.modal-full .modal-content {
+    min-height: 100vh;
 }

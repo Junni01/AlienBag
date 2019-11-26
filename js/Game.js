@@ -323,6 +323,7 @@ function spawnAlien(){
     document.getElementById("tokenName").innerText = token.AlienName;
     document.getElementById("dangerLevel").innerText = token.DangerLevel;
     document.getElementById("tokenDescription").innerText = token.SummoningText;
+    mySound.play();
 
 
 }
