@@ -1,6 +1,27 @@
+@font-face {
+    font-family: "venus rising";
+    src: url(/Assets/Fonts/venus_rising_rg.ttf);
+}
+.attack-button {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#dangerLevel {
+    font-size: 70px;
+    color: darkred;
+}
+#dangerTitle {
 
+}
+#tokenName {
+    font-size: 100px;
+}
+.text-monospace {
+    font-family: "venus rising" !important;
+}
 body {
 background-color: black;
+    font-family: "venus rising";
 }
 
 .modal {
@@ -8,6 +29,7 @@ background-color: black;
 }
 .modal-body {
     background-color: white;
+font-family: "venus rising";
 }
 .modal-footer {
     background: black;
@@ -41,5 +63,6 @@ background-color: black;
     color: white
 }
 .playerSelector {
-    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }

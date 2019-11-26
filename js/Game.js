@@ -22,6 +22,8 @@ shuffle(breederPile);
 var alienBag = [];
 
 var playerCount = 0;
+var QueenDialogOpen = false;
+var InfestDialogOpen = false;
 
 
 // Set up according to player amount.
@@ -232,19 +234,21 @@ function drawEventCard() {
 function resolveEvent() {
     let eventCard = drawEventCard()
     console.log(eventCard)
-    let groups = "";
+    let groups = " ";
     for(let group of eventCard.Movers) {
         console.log(group)
-      groups += alienDict[group] + ", ";
+      groups += alienDict[group] + " ";
     }
 
     document.getElementById("movers").innerText = groups;
-    document.getElementById("direction").innerText = eventCard.Direction;
+    document.getElementById("direction").innerText = "Move to: " + eventCard.Direction;
     document.getElementById("eventName").innerText = eventCard.CardName;
     document.getElementById("eventDesc").innerText = eventCard.AppCardText;
 
     if(eventCard.AlienBagSpecialCase && eventCard.SpecialCaseID == 1) {
         document.getElementById("addTokensDialog1").style.display = '';
+        document.getElementById("eventModalOkButton").disabled = true;
+        InfestDialogOpen = true;
 
     } /*else if(eventCard.AlienBagSpecialCase && eventCard.SpecialCaseID == 2){
         document.getElementById("addTokensDialog2").style.display = '';
@@ -257,6 +261,10 @@ function addTokensToBag(type, amount) {
             if(amount > 0) {
                 for(let i = 0;i < amount && larvaPile.length > 0;i++)
                 alienBag.push(larvaPile.pop())
+            }
+            if(InfestDialogOpen == true) {
+                document.getElementById("eventModalOkButton").disabled = false;
+                InfestDialogOpen = false;
             }
             break;
         case 2:
@@ -277,7 +285,14 @@ function addTokensToBag(type, amount) {
                     alienBag.push(breederPile.pop())
             }
             break;
-        case 5: alienBag.push(QueenToken)
+        case 5:
+            if(amount > 0) {
+                alienBag.push(QueenToken)
+            }
+            if(QueenDialogOpen = true) {
+                document.getElementById("devButton").disabled = false;
+                QueenDialogOpen = false;
+            }
             break;
     }
 
@@ -315,6 +330,8 @@ function initiateBagDevelopment() {
             break;
         case 5:
             document.getElementById("queenAttackDialog").style.display = '';
+            document.getElementById("devButton").disabled = true;
+            QueenDialogOpen = true;
         break;
         case 6: if(adultPile.length > 0) {
             alienBag.push(adultPile.pop())
@@ -331,11 +348,18 @@ function initiateBagDevelopment() {
 function spawnAlien(){
 
     let token = drawFromBag();
-
+if(token.AlienId != 6) {
     document.getElementById("tokenName").innerText = token.AlienName;
+    document.getElementById("dangerTitle").innerText = "Danger Level:"
     document.getElementById("dangerLevel").innerText = token.DangerLevel;
-    document.getElementById("tokenDescription").innerText = token.SummoningText;
-    mySound.play();
+} else {
+    document.getElementById("dangerTitle").innerText = ""
+    document.getElementById("dangerLevel").innerText = "";
+    document.getElementById("tokenName").innerText = "Nothing appears";
+}
+
+    //document.getElementById("tokenDescription").innerText = token.SummoningText;
+    //mySound.play();
 
 
 }
@@ -353,8 +377,8 @@ console.log("Resolving an attack")
                 }
 
             } else {
-                document.getElementById("attackName").innerText = "-";
-                document.getElementById("attackDesc").innerText = "No Attack";
+                document.getElementById("attackName").innerText = "Miss";
+                document.getElementById("attackDesc").innerText = "";
             }
 
 }

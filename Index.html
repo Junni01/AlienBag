@@ -14,77 +14,96 @@
 <script src="js/Game.js"></script>
 
 <body>
-    <div class="container-fluid">
-
-        <div class="row" id="playerSelector">
-            <div class="col-sm-12 text-center">
-                <div>
-                    <h1 id="playerCountText">How Many Players?</h1>
-                    <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(1)" style="font-size: 50px">1</button>
-                    <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(2)" style="font-size: 50px">2</button>
-                    <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(3)" style="font-size: 50px">3</button>
-                    <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(4)" style="font-size: 50px">4</button>
-                    <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(5)" style="font-size: 50px">5</button>
-                </div>
+<div class="container-fluid">
+    <!-- Player Select -->
+    <div class="row" id="playerSelector">
+        <div class="col-sm-12 text-center">
+            <div>
+                <h1 id="playerCountText">How Many Players?</h1>
+                <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(1)"
+                        style="font-size: 50px; width: 100px;">1
+                </button>
+                <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(2)"
+                        style="font-size: 50px; width: 100px;">2
+                </button>
+                <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(3)"
+                        style="font-size: 50px; width: 100px;">3
+                </button>
+                <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(4)"
+                        style="font-size: 50px; width: 100px;">4
+                </button>
+                <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(5)"
+                        style="font-size: 50px; width: 100px;">5
+                </button>
             </div>
         </div>
-        <div class="row" id="playerTurnWindows" style="display: none">
+    </div>
 
-            <div class="col-sm-12">
-                <div class="card-deck">
+    <!-- Upper tier cards -->
+    <div class="row" id="playerTurnWindows" style="display: none">
+
+        <div class="col-sm-12">
+            <div class="card-deck">
                 <div id="bagWindow" class="card">
 
-
-                    <!-- <h5 class="card-header text-center">Summon Intruders</h5> -->
-                    <h5 class="card-header text-center" >Summon Intruders</h5>
-                    <div class="card-body text-center">
-                            <button type="button" class="btn btn-dark" onclick="spawnAlien()" data-toggle="modal" data-target="#summonModal" style="font-size: 30px">Summon Intruders</button>
-                    </div>
-                    <!--                    
-                        <div class="card-text text-center" id="bagInfo" style="font-size: 20px">
-                        <b>Token:</b> <div id="tokenName"> </div>
-                        <b>Danger Level:</b> <div id="dangerLevel"> </div>
-                        <b>Description:</b> <div id="tokenDescription"> </div> 
+                    <h5 class="card-header text-center">Summon Intruders</h5>
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-dark" onclick="spawnAlien()" data-toggle="modal"
+                                        data-target="#summonModal" style="font-size: 30px; margin-top: 10%">Summon
+                                </button>
+                            </div>
                         </div>
-                    -->    
-                    
+                    </div>
                     <div class="card-footer text-center">
-                        
+
                     </div>
                 </div>
 
 
                 <div id="attackWindow" class="card">
-                    <h5 class="card-header text-center" >Intruder Attack</h5>
+                    <h5 class="card-header text-center">Intruder Attack</h5>
                     <div class="card-body">
-                    
-                    <div class="card-text text-center" id="attackInfo" style="font-size: 20px">
-<div class="row">
-    <div class="col-sm-6">
-            <button type="button" class="btn btn-dark" onclick="resolveAnAttack(2)" data-toggle="modal" data-target="#attackModal" style="font-size: 30px">Creeper</button>
-    </div>
 
-        <div class="col-sm-6">
-                <button type="button" class="btn btn-dark" onclick="resolveAnAttack(3)" data-toggle="modal" data-target="#attackModal" style="font-size: 30px">Adult</button>
-        </div>
-</div>
-<br>
-<div class="row">
-        <div class="col-sm-6">
-                <button type="button" class="btn btn-dark" onclick="resolveAnAttack(4)" data-toggle="modal" data-target="#attackModal" style="font-size: 30px">Breeder</button>
-       </div>
-        <div class="col-sm-6">
-                <button type="button" class="btn btn-dark" onclick="resolveAnAttack(5)" data-toggle="modal" data-target="#attackModal" style="font-size: 30px">Queen</button>
-       </div>
-</div>
+                        <div class="card-text text-center" id="attackInfo" style="font-size: 20px">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn btn-dark attack-button"
+                                            onclick="resolveAnAttack(2)"
+                                            data-toggle="modal" data-target="#attackModal">
+                                        Creeper
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn btn-dark attack-button"
+                                            onclick="resolveAnAttack(3)"
+                                            data-toggle="modal" data-target="#attackModal">Adult
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn btn-dark attack-button"
+                                            onclick="resolveAnAttack(4)"
+                                            data-toggle="modal" data-target="#attackModal">
+                                        Breeder
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button type="button" class="btn btn-dark attack-button"
+                                            onclick="resolveAnAttack(5)"
+                                            data-toggle="modal" data-target="#attackModal">Queen
+                                    </button>
+                                </div>
+                            </div>
 
 
-                            
-                            
-                            
-                            
-
-                    </div>
+                        </div>
                     </div>
                     <div class="card-footer text-center">
 
@@ -96,274 +115,352 @@
                     <h5 class="card-header text-center">Check Intruder Health</h5>
 
                     <div class="card-body text-center">
-                         <div class="row">
-                             <div class="col-sm-12">
-                                 <button type="button" class="btn btn-dark" onclick="resolveHealthCheck(1)" data-toggle="modal" data-target="#healthModal" style="font-size: 30px">Creeper/Adult</button>
-                                </div>
-                            </div>   
-                            <br>
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <button type="button" class="btn btn-dark" onclick="resolveHealthCheck(2)" data-toggle="modal" data-target="#healthModal" style="font-size: 30px">Breeder/Queen</button>
-                                </div>
+                        <div class="row text-center">
+                            <div class="col-sm-12 text-center">
+                                <button type="button" class="btn btn-dark" onclick="resolveHealthCheck(1)"
+                                        data-toggle="modal" data-target="#healthModal" style="font-size: 15px">
+                                    Creeper/Adult
+                                </button>
                             </div>
-                    </div>
-                        <div class="card-footer text-center">
-
                         </div>
-                        
+                        <br>
+                        <div class="row text-center text-center">
+                            <div class="col-sm-12">
+                                <button type="button" class="btn btn-dark" onclick="resolveHealthCheck(2)"
+                                        data-toggle="modal" data-target="#healthModal" style="font-size: 15px">
+                                    Breeder/Queen
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+
+                    </div>
+
 
                 </div>
             </div>
+        </div>
+    </div>
+    <br>
+    <!-- lower tier cards -->
+    <div class="row" id="eventWindows" style="display: none">
+        <div class="col-sm-12">
+            <div class="card-deck">
+                <!-- Event Card -->
+                <div class="card">
+                    <h5 class="card-header text-center">Event</h5>
+                    <div class="card-body text-center">
+                        <button type="button" class="btn btn-dark" onclick="resolveEvent()" data-toggle="modal"
+                                data-target="#eventModal" style="font-size: 20px">Resolve Event
+                        </button>
+                    </div>
+                    <div class="card-footer text-center">
+                    </div>
+
+
+                    <!--                    <div id="addTokensDialog2" style="display: none">-->
+                    <!--                        <p>Return tokens to bag</p>-->
+                    <!--                        <p>Larvae</p><input>-->
+                    <!--                        <p>Creeper</p><input>-->
+                    <!--                        <p>Adult</p><input>-->
+                    <!--                        <p>Breeder</p><input>-->
+                    <!--                        <p>Queen</p><input>-->
+                    <!--                        <button type="button" class="btn btn-dark" onclick="addTokensToBag(2, 3)">Add</button>-->
+                    <!--                    </div>-->
+                </div>
+                <!-- Bag development Card -->
+                <div class="card" id="bagDevelopmentWindow">
+                    <h5 class="card-header">Bag development</h5>
+
+                    <div class="card-body text-center">
+                        <button type="button" class="btn btn-dark" onclick="initiateBagDevelopment()"
+                                data-toggle="modal" data-target="#devModal" style="font-size: 15px">Draw
+                        </button>
+
+
+                    </div>
+                    <div class="card-footer text-center">
+
+                    </div>
+                </div>
+                <!-- Add tokens Card -->
+                <div class="card" id="bagAddWindow">
+                    <h5 class="card-header text-center">Add tokens to the bag</h5>
+                    <div id="addTokensDialog3" class="card-body">
+
+                        <div class="row">
+                            <div class="col-sm-6">Larva</div>
+                            <input type="number" id="larvaInput" class="form-control form-control-sm col-sm-6"
+                                   value="0" min="0"></div>
+                        <div class="row">
+                            <div class="col-sm-6">Creeper</div>
+                            <input type="number" id="creeperInput" class="form-control form-control-sm col-sm-6"
+                                   value="0" min="0"></div>
+                        <div class="row">
+                            <div class="col-sm-6">Adult</div>
+                            <input type="number" id="adultInput" class="form-control form-control-sm col-sm-6"
+                                   value="0" min="0"></div>
+                        <div class="row">
+                            <div class="col-sm-6">Breeder</div>
+                            <input type="number" id="breederInput" class="form-control form-control-sm col-sm-6"
+                                   value="0" min="0"></div>
+                        <div class="row">
+                            <div class="col-sm-6">Queen</div>
+                            <input type="number" id="queenInput" class="form-control form-control-sm col-sm-6"
+                                   value="0" min="0" max="1"></div>
+
+
+                    </div>
+                    <div class="card-footer text-center">
+                        <button type="button" class="btn btn-dark" onclick="addAliens()">Add</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <br>
-        <div class="row" id="eventWindows" style="display: none">
-            <div class="col-sm-12">
-                <div class="card-deck">
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center" id="shuffleFooter" style="display: none">
+            <hr>
+            <button type="button" class="btn btn-dark" onclick="shuffleBag()">Shuffle Bag</button>
+            <button type="button" class="btn btn-dark" onclick="shuffleEventDeck()">Shuffle Event Deck</button>
+            <button type="button" class="btn btn-dark" onclick="shuffleAttackDeck()">Shuffle Attack Deck</button>
+            <div id="players" style="color: white;"></div>
+        </div>
+    </div>
+    <!-- MODALS -->
+    <!-- Summon modal-->
+    <div class="modal fade" id="summonModal">
+        <div class="modal-dialog modal-full">
+            <div class="modal-content text-center">
 
-                    <div class="card">
-                        <h5 class="card-header text-center">Event</h5>
-                        <div class="card-body text-center">
-                            <div id="movement">
-                                <b>Movement: </b>
-                                <div id="movers"></div> move to direction: <div id="direction"></div>
+                <!-- Modal Header -->
+                <div class="modal-header-center">
+                    <!--<h4 class="modal-title text-center">Intruder</h4>-->
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body text-center" style="font-size: 30px">
+                    <div id="tokenName"></div>
+                    <div id="dangerTitle"></div>
+                    <div id="dangerLevel"></div>
+                    <div id="tokenDescription"></div>
+
+
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-start">
+                    <button type="button" class="btn btn-dark btn-lg btn-block" data-dismiss="modal"
+                            style="font-size: 30px">Ok
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Health Modal -->
+    <div class="modal fade" id="healthModal">
+        <div class="modal-dialog modal-full">
+            <div class="modal-content text-center">
+
+                <!-- Modal Header -->
+                <!--                         <div class="modal-header-center">
+                                          <h4 class="modal-title text-center">Intruder Health</h4>
+                                        </div> -->
+
+                <!-- Modal body -->
+                <div class="modal-body text-center" style="font-size: 30px">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="healthAmount" style="font-size: 300px; color: red;"></div>
+                            <div id="healthInfo" style="font-size: 100px">
                             </div>
-                            <div id="eventInfo">
-                                <b>Event Name:</b>
-                                <div id="eventName"></div>
-
-                                <b>Event description:</b>
-                                <div id="eventDesc"></div>
-
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="healthInfo2" style="font-size: 100px">
                             </div>
-                            <div id="addTokensDialog1" style="display: none">
-                                <p>Was someone infested?</p>
-                                <button type="button" class="btn btn-dark" onclick="addTokensToBag(0, 0)">Yes
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-start">
+                    <button type="button" class="btn btn-dark btn-lg btn-block" data-dismiss="modal"
+                            style="font-size: 30px">Ok
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Attack Modal -->
+    <div class="modal fade" id="attackModal">
+        <div class="modal-dialog modal-full">
+            <div class="modal-content text-center">
+
+                <!-- Modal Header -->
+                <!--                <div class="modal-header-center">
+                                    <h4 class="modal-title text-center">Intruder Attack</h4>
+                                </div>-->
+
+                <!-- Modal body -->
+                <div class="modal-body text-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="attackName" style="font-size: 70px"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="attackDesc" style="font-size: 25px; margin-left: 25%; margin-right: 25%"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-start">
+                    <button type="button" class="btn btn-dark btn-lg btn-block" data-dismiss="modal"
+                            style="font-size: 40px">Ok
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Event Modal -->
+    <div class="modal fade" id="eventModal">
+        <div class="modal-dialog modal-full">
+            <div class="modal-content text-center">
+
+                <div class="modal-body text-center">
+
+                    <div class="row">
+                        <div class="col-sm-12">Movement</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12" id="movers" style="font-size: 30px"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12" id="direction" style="font-size: 30px"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">Event</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="eventName" style="font-size: 45px"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="eventDesc" style="font-size: 25px; margin-left: 20%; margin-right: 20%"></div>
+                        </div>
+                    </div>
+
+                    <div id="addTokensDialog1" style="display: none">
+                        <div class="row">
+                            <div class="col-sm-12">Was someone infested?</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button type="button" class="btn btn-dark" onclick="addTokensToBag(1, 0)">Yes
                                 </button>
                                 <button type="button" class="btn btn-dark" onclick="addTokensToBag(1, 1)">No
                                 </button>
                             </div>
                         </div>
-                        <div class="card-footer text-center">
-                            <button type="button" class="btn btn-dark" onclick="resolveEvent()">Draw Event
-                            </button>
-                        </div>
-                        
-                        
-                        <!--                    <div id="addTokensDialog2" style="display: none">-->
-                        <!--                        <p>Return tokens to bag</p>-->
-                        <!--                        <p>Larvae</p><input>-->
-                        <!--                        <p>Creeper</p><input>-->
-                        <!--                        <p>Adult</p><input>-->
-                        <!--                        <p>Breeder</p><input>-->
-                        <!--                        <p>Queen</p><input>-->
-                        <!--                        <button type="button" class="btn btn-dark" onclick="addTokensToBag(2, 3)">Add</button>-->
-                        <!--                    </div>-->
-                    </div>
-                    <div class="card" id="bagDevelopmentWindow">
-                        <h5 class="card-header">Bag development</h5>
 
-                        <div class="card-body text-center">
-
-
-                            <p class="card-text">
-                            <div id="bagDevMessage"></div>
-                            </p>
-                            <div id="queenAttackDialog" class="text-center" style="display: none">
-                                <p>Was the queen spawned?</p>
-                                <button type="button" class="btn btn-dark" onclick="addTokensToBag(0, 0)">Yes
-                                </button>
-                                <button type="button" class="btn btn-dark" onclick="addTokensToBag(5, 1)">No
-                                </button>
-                            </div>
-                        </div>
-                        <div class="card-footer text-center">
-                            <button type="button" class="btn btn-dark" onclick="initiateBagDevelopment()">Draw
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="card" id="bagAddWindow">
-                        <h5 class="card-header text-center">Add tokens to the bag</h5>
-                        <div id="addTokensDialog3" class="card-body">
-
-                            <div class="row"><div class="col-sm-6">Larva</div><input type="number" id="larvaInput" class="form-control form-control-sm col-sm-6"
-                                                     value="0" min="0"></div>
-                            <div class="row"><div class="col-sm-6">Creeper</div><input type="number" id="creeperInput" class="form-control form-control-sm col-sm-6"
-                                                    value="0" min="0"></div>
-                            <div class="row"><div class="col-sm-6">Adult</div><input type="number" id="adultInput" class="form-control form-control-sm col-sm-6"
-                                                  value="0" min="0"></div>
-                            <div class="row"><div class="col-sm-6">Breeder</div><input type="number" id="breederInput" class="form-control form-control-sm col-sm-6"
-                                                    value="0" min="0"></div>
-                            <div class="row"><div class="col-sm-6">Queen</div><input type="number" id="queenInput" class="form-control form-control-sm col-sm-6"
-                                                  value="0" min="0" max="1"></div>
-
-
-                        </div>
-                        <div class="card-footer text-center">
-                            <button type="button" class="btn btn-dark" onclick="addAliens()">Add</button>
-                        </div>
                     </div>
                 </div>
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-start">
+                    <button type="button" class="btn btn-dark btn-lg btn-block" id="eventModalOkButton"
+                            data-dismiss="modal"
+                            style="font-size: 40px">Ok
+                    </button>
+                </div>
+
             </div>
 
 
         </div>
-<!-- MODALS -->
-
-    <!-- Summon modal-->
-        <div class="modal fade" id="summonModal">
-                <div class="modal-dialog modal-full">
-                  <div class="modal-content text-center">
-              
-                    <!-- Modal Header -->
-                    <div class="modal-header-center">
-                      <!--<h4 class="modal-title text-center">Intruder</h4>-->
-                    </div>
-              
-                    <!-- Modal body -->
-                    <div class="modal-body text-center" style="font-size: 30px">
-                            <b>Token:</b> <div id="tokenName" > </div>
-                            <b>Danger Level:</b> <div id="dangerLevel"> </div>
-                            <b>Description:</b> <div id="tokenDescription"> </div>
-                    
-                            
-                        </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer justify-content-start">
-                            <button type="button" class="btn btn-dark btn-lg btn-block" data-dismiss="modal" style="font-size: 30px">Ok</button>
-                    </div>
-              
-                  </div>
-                </div>
-              </div>
-    <!-- Health Modal -->
-              <div class="modal fade" id="healthModal">
-                    <div class="modal-dialog modal-full">
-                      <div class="modal-content text-center">
-                  
-                        <!-- Modal Header -->
-<!--                         <div class="modal-header-center">
-                          <h4 class="modal-title text-center">Intruder Health</h4>
-                        </div> -->
-                  
-                        <!-- Modal body -->
-                        <div class="modal-body text-center" style="font-size: 30px">
-<div class="row">
-    <div class="col-sm-12">
-            <div id="healthAmount" style="font-size: 300px; color: red;"></div>
-            <div id="healthInfo" style="font-size: 100px">
-                </div>
     </div>
-</div>
-<div class="row">
-        <div class="col-sm-12">
-                <div id="healthInfo2" style="font-size: 100px">
+    <!-- Bag Dev Modal -->
+    <div class="modal fade" id="devModal">
+        <div class="modal-dialog modal-full">
+            <div class="modal-content text-center">
+
+                <!-- Modal body -->
+                <div class="modal-body text-center" style="font-size: 30px">
+                    <div id="bagDevMessage"></div>
+
+                    <div id="queenAttackDialog" class="text-center" style="display: none">
+                        <p>Was the queen spawned?</p>
+                        <button type="button" class="btn btn-dark" onclick="addTokensToBag(5, 0)">Yes
+                        </button>
+                        <button type="button" class="btn btn-dark" onclick="addTokensToBag(5, 1)">No
+                        </button>
                     </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-start">
+                    <button type="button" class="btn btn-dark btn-lg btn-block" id="devButton" data-dismiss="modal"
+                            style="font-size: 30px">Ok
+                    </button>
+                </div>
+
+            </div>
         </div>
     </div>
-                                
-
-                               
-
-                               
-                            </div>
-                        <!-- Modal footer -->
-                        <div class="modal-footer justify-content-start">
-                                <button type="button" class="btn btn-dark btn-lg btn-block" data-dismiss="modal" style="font-size: 30px">Ok</button>
-                        </div>
-                  
-                      </div>
-                    </div>
-                  </div>
-    <!-- Attack Modal -->
-                  <div class="modal fade" id="attackModal">
-                        <div class="modal-dialog modal-full">
-                          <div class="modal-content text-center">
-                      
-                            <!-- Modal Header -->
-                            <div class="modal-header-center">
-                              <h4 class="modal-title text-center">Intruder Attack</h4>
-                            </div>
-                      
-                            <!-- Modal body -->
-                            <div class="modal-body text-center" style="font-size: 30px">
-                                    <b>Attack Name:</b> <div id="attackName"></div>
-                                    <b>Attack Description:</b> <div id="attackDesc"></div>
-                                 
-                                    
-                                </div>
-                            <!-- Modal footer -->
-                            <div class="modal-footer justify-content-start">
-                                    <button type="button" class="btn btn-dark btn-lg btn-block" data-dismiss="modal" style="font-size: 40px">Ok</button>
-                            </div>
-                      
-                          </div>
-                        </div>
-                      </div>
-    
 
 
-
-
-
-
-
-<div class="row">
-
-    <div class="col-sm-12 text-center" id="shuffleFooter" style="display: none">
-    <hr>
-        <button type="button" class="btn btn-dark" onclick="shuffleBag()">Shuffle Bag</button>
-        <button type="button" class="btn btn-dark" onclick="shuffleEventDeck()">Shuffle Event Deck</button>
-        <button type="button" class="btn btn-dark" onclick="shuffleAttackDeck()">Shuffle Attack Deck</button>
-        <div id="players" style="color: white;"></div>
-    </div>
 </div>
-
-    </div>
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
 <script>
-$(document).ready(function() {
-    mySound = new sound("/Assets/Sounds/Roar.wav");
-})
+    $(document).ready(function () {
+        mySound = new sound("/Assets/Sounds/Roar.wav");
+    })
 
 
-function addAliens() {
-    let larva = document.getElementById("larvaInput").value;
-    document.getElementById("larvaInput").value = 0;
-    addTokensToBag(1,larva)
-    let creeper = document.getElementById("creeperInput").value;
-    document.getElementById("creeperInput").value = 0;
-    addTokensToBag(2, creeper)
-    let adult = document.getElementById("adultInput").value;
-    document.getElementById("adultInput").value = 0;
-    addTokensToBag(3, adult)
-    let breeder = document.getElementById("breederInput").value;
-    document.getElementById("breederInput").value = 0;
-    addTokensToBag(4, breeder)
-    let queen = document.getElementById("queenInput").value;
-    document.getElementById("queenInput").value = 0;
-    if(queen != 0) {
-        addTokensToBag(5, 1)
+    function addAliens() {
+        let larva = document.getElementById("larvaInput").value;
+        document.getElementById("larvaInput").value = 0;
+        addTokensToBag(1, larva)
+        let creeper = document.getElementById("creeperInput").value;
+        document.getElementById("creeperInput").value = 0;
+        addTokensToBag(2, creeper)
+        let adult = document.getElementById("adultInput").value;
+        document.getElementById("adultInput").value = 0;
+        addTokensToBag(3, adult)
+        let breeder = document.getElementById("breederInput").value;
+        document.getElementById("breederInput").value = 0;
+        addTokensToBag(4, breeder)
+        let queen = document.getElementById("queenInput").value;
+        document.getElementById("queenInput").value = 0;
+        if (queen != 0) {
+            addTokensToBag(5, 1)
+        }
     }
-}
 
-function sound(src) {
-  this.sound = document.createElement("audio");
-  this.sound.src = src;
-  this.sound.setAttribute("preload", "auto");
-  this.sound.setAttribute("controls", "none");
-  this.sound.style.display = "none";
-  document.body.appendChild(this.sound);
-  this.play = function(){
-    this.sound.play();
-  }
-  this.stop = function(){
-    this.sound.pause();
-  }
-} 
+    function sound(src) {
+        this.sound = document.createElement("audio");
+        this.sound.src = src;
+        this.sound.setAttribute("preload", "auto");
+        this.sound.setAttribute("controls", "none");
+        this.sound.style.display = "none";
+        document.body.appendChild(this.sound);
+        this.play = function () {
+            this.sound.play();
+        }
+        this.stop = function () {
+            this.sound.pause();
+        }
+    }
 
 </script>
 
