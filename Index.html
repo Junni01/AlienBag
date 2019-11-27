@@ -51,7 +51,7 @@
                         <div class="row text-center">
                             <div class="col-md-12">
                                 <button type="button" class="btn btn-dark" onclick="spawnAlien()" data-toggle="modal"
-                                        data-target="#summonModal" style="font-size: 2vw; margin-top: 10%">Summon
+                                        data-target="#summonModal" style="font-size: 2vmin; margin-top: 10%">Summon
                                 </button>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                                 <div class="col-sm-12">
                                     <button type="button" class="btn btn-dark attack-button"
                                             onclick="resolveAnAttack(2)"
-                                            data-toggle="modal" data-target="#attackModal" style="font-size: 2vw">
+                                            data-toggle="modal" data-target="#attackModal" style="font-size: 2vmin">
                                         Creeper
                                     </button>
                                 </div>
@@ -80,7 +80,8 @@
                                 <div class="col-sm-12">
                                     <button type="button" class="btn btn-dark attack-button"
                                             onclick="resolveAnAttack(3)"
-                                            data-toggle="modal" data-target="#attackModal" style="font-size: 2vw">Adult
+                                            data-toggle="modal" data-target="#attackModal" style="font-size: 2vmin">
+                                        Adult
                                     </button>
                                 </div>
                             </div>
@@ -88,7 +89,7 @@
                                 <div class="col-sm-12">
                                     <button type="button" class="btn btn-dark attack-button"
                                             onclick="resolveAnAttack(4)"
-                                            data-toggle="modal" data-target="#attackModal" style="font-size: 2vw">
+                                            data-toggle="modal" data-target="#attackModal" style="font-size: 2vmin">
                                         Breeder
                                     </button>
                                 </div>
@@ -97,7 +98,8 @@
                                 <div class="col-sm-12">
                                     <button type="button" class="btn btn-dark attack-button"
                                             onclick="resolveAnAttack(5)"
-                                            data-toggle="modal" data-target="#attackModal" style="font-size: 2vw">Queen
+                                            data-toggle="modal" data-target="#attackModal" style="font-size: 2vmin">
+                                        Queen
                                     </button>
                                 </div>
                             </div>
@@ -186,62 +188,16 @@
                 </div>
                 <!-- Add tokens Card -->
                 <div class="card" id="bagAddWindow">
-                    <h5 class="card-header text-center">Add tokens to the bag</h5>
-                    <div id="addTokensDialog3" class="card-body">
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                Larva
-                            </div>
-                              <div class="col-sm-6">
-
-                                  <input type="number" id="larvaInput" class="form-control form-control-sm"
-                                         value="0" min="0">
-                            </div>
-                        </div>
-                        <!--                            <input type="number" id="larvaInput" class="form-control form-control-sm col-sm-6"
-                                                           value="0" min="0"></div>-->
-                        <div class="row">
-                            <div class="col-sm-6">
-                                Creeper
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="number" id="creeperInput" class="form-control form-control-sm"
-                                       value="0" min="0">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                Adult
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="number" id="adultInput" class="form-control form-control-sm"
-                                       value="0" min="0">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                Breeder
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="number" id="breederInput" class="form-control form-control-sm"
-                                       value="0" min="0">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                Queen
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="number" id="queenInput" class="form-control form-control-sm"
-                                       value="0" min="0" max="1">
-                            </div>
-                        </div>
+                    <h5 class="card-header text-center">Add tokens</h5>
+                    <div id="addTokensDialog3" class="card-body text-center">
+                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#addModal"
+                                style="font-size: 2vw">Add
+                        </button>
 
 
                     </div>
                     <div class="card-footer text-center">
-                        <button type="button" class="btn btn-dark" onclick="addAliens()">Add</button>
+
                     </div>
                 </div>
             </div>
@@ -366,7 +322,7 @@
                 <div class="modal-body text-center">
 
                     <div class="row">
-                        <div class="col-sm-12">Movement</div>
+                        <div class="col-sm-12 border" id="eventMovementBox" style="font-size: 2vmin">Movement</div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12" id="movers" style="font-size: 30px"></div>
@@ -375,7 +331,7 @@
                         <div class="col-sm-12" id="direction" style="font-size: 30px"></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12">Event</div>
+                        <div class="col-sm-12 border" style="font-size: 2vmin">Event</div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
@@ -444,6 +400,83 @@
             </div>
         </div>
     </div>
+    <!-- Add tokens Modal -->
+    <div class="modal fade" id="addModal">
+        <div class="modal-dialog modal-full">
+            <div class="modal-content text-center">
+
+                <!-- Modal body -->
+                <div class="modal-body text-center" style="font-size: 30px; margin-left: 25%; margin-right: 25%;">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            Larva
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <input type="number" id="larvaInput" class="form-control form-control-sm"
+                                   min="0">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            Creeper
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="number" id="creeperInput" class="form-control form-control-sm"
+                                   min="0">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            Adult
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="number" id="adultInput" class="form-control form-control-sm"
+                                   min="0">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            Breeder
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="number" id="breederInput" class="form-control form-control-sm"
+                                   min="0">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            Queen
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input type="number" id="queenInput" class="form-control form-control-sm"
+                               min="0" max="1">
+                    </div>
+                </div>
+            </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer justify-content-start">
+            <button type="button" class="btn btn-dark btn-lg btn-block" id="addButton" onclick="addAliens()"
+                    data-dismiss="modal"
+                    style="font-size: 30px">Ok
+            </button>
+
+        </div>
+
+    </div>
+</div>
+</div>
 
 
 </div>
@@ -457,19 +490,19 @@
 
     function addAliens() {
         let larva = document.getElementById("larvaInput").value;
-        document.getElementById("larvaInput").value = 0;
+        document.getElementById("larvaInput").value = "";
         addTokensToBag(1, larva)
         let creeper = document.getElementById("creeperInput").value;
-        document.getElementById("creeperInput").value = 0;
+        document.getElementById("creeperInput").value = "";
         addTokensToBag(2, creeper)
         let adult = document.getElementById("adultInput").value;
-        document.getElementById("adultInput").value = 0;
+        document.getElementById("adultInput").value = "";
         addTokensToBag(3, adult)
         let breeder = document.getElementById("breederInput").value;
-        document.getElementById("breederInput").value = 0;
+        document.getElementById("breederInput").value = "";
         addTokensToBag(4, breeder)
         let queen = document.getElementById("queenInput").value;
-        document.getElementById("queenInput").value = 0;
+        document.getElementById("queenInput").value = "";
         if (queen != 0) {
             addTokensToBag(5, 1)
         }
@@ -490,7 +523,7 @@
         }
     }
 
- </script>
+</script>
 </body>
 
 </html>
