@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29264c71-4230-4251-84f3-085de67f2b9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Fonts/venus_rising_rg.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
@@ -40,7 +38,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Assets/Fonts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TheExtraComputer" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -88,7 +86,9 @@
       <workItem from="1574700693575" duration="61000" />
       <workItem from="1574702361594" duration="47000" />
       <workItem from="1574702542602" duration="4000" />
-      <workItem from="1574787837517" duration="10510000" />
+      <workItem from="1574787837517" duration="10870000" />
+      <workItem from="1574835771716" duration="617000" />
+      <workItem from="1574874354296" duration="6397000" />
     </task>
     <servers />
   </component>
@@ -102,6 +102,10 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
+    <state x="615" y="339" key="FileChooserDialogImpl" timestamp="1574835787039">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="615" y="339" key="FileChooserDialogImpl/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1574835787039" />
     <state x="767" y="230" key="RollbackChangesDialog" timestamp="1574703334093">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -51,7 +51,7 @@
                         <div class="row text-center">
                             <div class="col-md-12">
                                 <button type="button" class="btn btn-dark" onclick="spawnAlien()" data-toggle="modal"
-                                        data-target="#summonModal" style="font-size: 30px; margin-top: 10%">Summon
+                                        data-target="#summonModal" style="font-size: 2vw; margin-top: 10%">Summon
                                 </button>
                             </div>
                         </div>
@@ -66,12 +66,12 @@
                     <h5 class="card-header text-center">Intruder Attack</h5>
                     <div class="card-body">
 
-                        <div class="card-text text-center" id="attackInfo" style="font-size: 20px">
+                        <div class="card-text text-center" id="attackInfo">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <button type="button" class="btn btn-dark attack-button"
                                             onclick="resolveAnAttack(2)"
-                                            data-toggle="modal" data-target="#attackModal">
+                                            data-toggle="modal" data-target="#attackModal" style="font-size: 2vw">
                                         Creeper
                                     </button>
                                 </div>
@@ -80,7 +80,7 @@
                                 <div class="col-sm-12">
                                     <button type="button" class="btn btn-dark attack-button"
                                             onclick="resolveAnAttack(3)"
-                                            data-toggle="modal" data-target="#attackModal">Adult
+                                            data-toggle="modal" data-target="#attackModal" style="font-size: 2vw">Adult
                                     </button>
                                 </div>
                             </div>
@@ -88,7 +88,7 @@
                                 <div class="col-sm-12">
                                     <button type="button" class="btn btn-dark attack-button"
                                             onclick="resolveAnAttack(4)"
-                                            data-toggle="modal" data-target="#attackModal">
+                                            data-toggle="modal" data-target="#attackModal" style="font-size: 2vw">
                                         Breeder
                                     </button>
                                 </div>
@@ -97,7 +97,7 @@
                                 <div class="col-sm-12">
                                     <button type="button" class="btn btn-dark attack-button"
                                             onclick="resolveAnAttack(5)"
-                                            data-toggle="modal" data-target="#attackModal">Queen
+                                            data-toggle="modal" data-target="#attackModal" style="font-size: 2vw">Queen
                                     </button>
                                 </div>
                             </div>
@@ -112,14 +112,14 @@
 
 
                 <div id="healthWindow" class="card">
-                    <h5 class="card-header text-center">Check Intruder Health</h5>
+                    <h5 class="card-header text-center">Intruder Health</h5>
 
                     <div class="card-body text-center">
                         <div class="row text-center">
                             <div class="col-sm-12 text-center">
                                 <button type="button" class="btn btn-dark" onclick="resolveHealthCheck(1)"
-                                        data-toggle="modal" data-target="#healthModal" style="font-size: 15px">
-                                    Creeper/Adult
+                                        data-toggle="modal" data-target="#healthModal" style="font-size: 2vw">
+                                    Creeper<br>Adult
                                 </button>
                             </div>
                         </div>
@@ -127,8 +127,8 @@
                         <div class="row text-center text-center">
                             <div class="col-sm-12">
                                 <button type="button" class="btn btn-dark" onclick="resolveHealthCheck(2)"
-                                        data-toggle="modal" data-target="#healthModal" style="font-size: 15px">
-                                    Breeder/Queen
+                                        data-toggle="modal" data-target="#healthModal" style="font-size: 2vw">
+                                    Breeder<br>Queen
                                 </button>
                             </div>
                         </div>
@@ -149,10 +149,10 @@
             <div class="card-deck">
                 <!-- Event Card -->
                 <div class="card">
-                    <h5 class="card-header text-center">Event</h5>
+                    <h5 class="card-header text-center">Events</h5>
                     <div class="card-body text-center">
                         <button type="button" class="btn btn-dark" onclick="resolveEvent()" data-toggle="modal"
-                                data-target="#eventModal" style="font-size: 20px">Resolve Event
+                                data-target="#eventModal" style="font-size: 2vw">Resolve Event
                         </button>
                     </div>
                     <div class="card-footer text-center">
@@ -175,7 +175,7 @@
 
                     <div class="card-body text-center">
                         <button type="button" class="btn btn-dark" onclick="initiateBagDevelopment()"
-                                data-toggle="modal" data-target="#devModal" style="font-size: 15px">Draw
+                                data-toggle="modal" data-target="#devModal" style="font-size: 2vw">Resolve
                         </button>
 
 
@@ -190,25 +190,53 @@
                     <div id="addTokensDialog3" class="card-body">
 
                         <div class="row">
-                            <div class="col-sm-6">Larva</div>
-                            <input type="number" id="larvaInput" class="form-control form-control-sm col-sm-6"
-                                   value="0" min="0"></div>
+                            <div class="col-sm-6">
+                                Larva
+                            </div>
+                              <div class="col-sm-6">
+
+                                  <input type="number" id="larvaInput" class="form-control form-control-sm"
+                                         value="0" min="0">
+                            </div>
+                        </div>
+                        <!--                            <input type="number" id="larvaInput" class="form-control form-control-sm col-sm-6"
+                                                           value="0" min="0"></div>-->
                         <div class="row">
-                            <div class="col-sm-6">Creeper</div>
-                            <input type="number" id="creeperInput" class="form-control form-control-sm col-sm-6"
-                                   value="0" min="0"></div>
+                            <div class="col-sm-6">
+                                Creeper
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="number" id="creeperInput" class="form-control form-control-sm"
+                                       value="0" min="0">
+                            </div>
+                        </div>
                         <div class="row">
-                            <div class="col-sm-6">Adult</div>
-                            <input type="number" id="adultInput" class="form-control form-control-sm col-sm-6"
-                                   value="0" min="0"></div>
+                            <div class="col-sm-6">
+                                Adult
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="number" id="adultInput" class="form-control form-control-sm"
+                                       value="0" min="0">
+                            </div>
+                        </div>
                         <div class="row">
-                            <div class="col-sm-6">Breeder</div>
-                            <input type="number" id="breederInput" class="form-control form-control-sm col-sm-6"
-                                   value="0" min="0"></div>
+                            <div class="col-sm-6">
+                                Breeder
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="number" id="breederInput" class="form-control form-control-sm"
+                                       value="0" min="0">
+                            </div>
+                        </div>
                         <div class="row">
-                            <div class="col-sm-6">Queen</div>
-                            <input type="number" id="queenInput" class="form-control form-control-sm col-sm-6"
-                                   value="0" min="0" max="1"></div>
+                            <div class="col-sm-6">
+                                Queen
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="number" id="queenInput" class="form-control form-control-sm"
+                                       value="0" min="0" max="1">
+                            </div>
+                        </div>
 
 
                     </div>
@@ -220,12 +248,11 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12 text-center" id="shuffleFooter" style="display: none">
-            <hr>
+        <div class="col-sm-12 text-center" id="shuffleFooter" style="display: none; margin-top: 5px;">
             <button type="button" class="btn btn-dark" onclick="shuffleBag()">Shuffle Bag</button>
             <button type="button" class="btn btn-dark" onclick="shuffleEventDeck()">Shuffle Event Deck</button>
             <button type="button" class="btn btn-dark" onclick="shuffleAttackDeck()">Shuffle Attack Deck</button>
-            <div id="players" style="color: white;"></div>
+            <button type="button" class="btn btn-dark" onclick="fullScreen()">Fullscreen</button>
         </div>
     </div>
     <!-- MODALS -->
@@ -240,7 +267,7 @@
                 </div>
 
                 <!-- Modal body -->
-                <div class="modal-body text-center" style="font-size: 30px">
+                <div class="modal-body text-center" style="font-size: 7vmin">
                     <div id="tokenName"></div>
                     <div id="dangerTitle"></div>
                     <div id="dangerLevel"></div>
@@ -269,17 +296,17 @@
                                         </div> -->
 
                 <!-- Modal body -->
-                <div class="modal-body text-center" style="font-size: 30px">
-                    <div class="row">
+                <div class="modal-body text-center mx-auto" style="font-size: 30px">
+                    <div class="row ">
                         <div class="col-sm-12">
-                            <div id="healthAmount" style="font-size: 300px; color: red;"></div>
-                            <div id="healthInfo" style="font-size: 100px">
+                            <div id="healthAmount" style="font-size: 50vh; color: red;"></div>
+                            <div id="healthInfo" style="font-size: 7vw">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <div id="healthInfo2" style="font-size: 100px">
+                            <div id="healthInfo2" style="font-size: 7vw">
                             </div>
                         </div>
                     </div>
@@ -310,12 +337,13 @@
                 <div class="modal-body text-center">
                     <div class="row">
                         <div class="col-md-12">
-                            <div id="attackName" style="font-size: 70px"></div>
+                            <div id="attackName" style="font-size: 7vmin"></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div id="attackDesc" style="font-size: 25px; margin-left: 25%; margin-right: 25%"></div>
+                            <div id="attackDesc"
+                                 style="font-size: 5vmin; margin-left: 25%; margin-right: 25%"></div>
                         </div>
                     </div>
 
@@ -395,7 +423,7 @@
             <div class="modal-content text-center">
 
                 <!-- Modal body -->
-                <div class="modal-body text-center" style="font-size: 30px">
+                <div class="modal-body text-center" style="font-size: 30px; margin-left: 25%; margin-right: 25%;">
                     <div id="bagDevMessage"></div>
 
                     <div id="queenAttackDialog" class="text-center" style="display: none">
@@ -462,8 +490,7 @@
         }
     }
 
-</script>
-
+ </script>
 </body>
 
 </html>

@@ -24,6 +24,7 @@ var alienBag = [];
 var playerCount = 0;
 var QueenDialogOpen = false;
 var InfestDialogOpen = false;
+var fullscreen = false;
 
 
 // Set up according to player amount.
@@ -343,6 +344,46 @@ function initiateBagDevelopment() {
     shuffleBag();
 }
 
+function fullScreen() {
+
+    var b = document.documentElement;
+
+    if(fullscreen == false) {
+        if (b.requestFullscreen) {
+            b.requestFullscreen()
+        } else {
+            if (b.mozRequestFullScreen) {
+                b.mozRequestFullScreen()
+            } else {
+                if (b.webkitRequestFullscreen) {
+                    b.webkitRequestFullscreen()
+                } else {
+                    if (b.msRequestFullscreen) {
+                        b.msRequestFullscreen()
+                    }
+                }
+            }
+        }
+        fullscreen = true;
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen()
+        } else {
+            if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen()
+            } else {
+                if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen()
+                } else {
+                    if (document.msExitFullscreen) {
+                        document.msExitFullscreen()
+                    }
+                }
+            }
+        }
+        fullscreen = false;
+    }
+}
 
 
 function spawnAlien(){
@@ -368,6 +409,7 @@ function resolveAnAttack(type) {
 console.log("Resolving an attack")
             let attackCard = drawAttackCard()
             if(attackCard.AttackingTypes.includes(type)) {
+                document.getElementById("attackName").style.color = "red";
                 document.getElementById("attackName").innerText = attackCard.AttackName;
                 if(attackCard.SpecialRule == 0) {
                     document.getElementById("attackDesc").innerText = attackCard.AttackDescriptionApp;
@@ -377,6 +419,7 @@ console.log("Resolving an attack")
                 }
 
             } else {
+                document.getElementById("attackName").style.color = "black";
                 document.getElementById("attackName").innerText = "Miss";
                 document.getElementById("attackDesc").innerText = "";
             }
