@@ -360,7 +360,7 @@
                             <div id="eventDesc" style="font-size: 25px; margin-left: 20%; margin-right: 20%"></div>
                         </div>
                     </div>
-
+<br>
                     <div id="addTokensDialog1" style="display: none">
                         <div class="row">
                             <div class="col-sm-12">Was someone infested?</div>
@@ -376,6 +376,22 @@
                         </div>
 
                     </div>
+                    <div id="peekDialog">
+
+                        <div class="row">
+                            <div class="col-sm-12">Return event card to:</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Top of deck
+                                </button>
+                                <button type="button" class="btn btn-dark" data-dismiss="modal" onclick="returnEventToBottom()">Bottom of deck
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <!-- Modal footer -->
                 <div class="modal-footer justify-content-start">

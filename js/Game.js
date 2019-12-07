@@ -25,6 +25,7 @@ var playerCount = 0;
 var QueenDialogOpen = false;
 var InfestDialogOpen = false;
 var fullscreen = false;
+var eventPeek = false;
 
 
 // Set up according to player amount.
@@ -212,6 +213,7 @@ function drawEventCardForRetreat() {
 }
 
 function peekEventCard() {
+    document.getElementById("peekDialog").style.display = '';
     if(eventDrawPile.length == 0) {
         eventDrawPile.push(...eventDiscardPile);
         eventDiscardPile = [];
@@ -232,8 +234,19 @@ function peekEventCard() {
 
 
 }
+function returnEventToBottom() {
+    eventDrawPile.unshift(eventDrawPile.pop());
+    console.log(eventDrawPile);
+
+}
+
+
 
 function drawEventCard() {
+
+
+
+
     if(eventDrawPile.length == 0) {
         eventDrawPile.push(...eventDiscardPile);
         eventDiscardPile = [];
@@ -255,6 +268,7 @@ function drawEventCard() {
 }
 
 function resolveEvent() {
+    document.getElementById("peekDialog").style.display = 'none';
     let eventCard = drawEventCard()
     console.log(eventCard)
     let groups = " ";

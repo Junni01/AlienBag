@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Vegazer</title>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+    </head>
+    <script src="js/VegasCards.js"></script>
+    <script src="js/Vegas.js"></script>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="cardInfo"></div>
+        </div>
+    </div>
+    <div class="row"><div class="col-sm-12">
+        <button type="button" class="btn btn-dark btn-lg btn-block"
+               onclick="showCard()"
+                style="font-size: 40px">Ok
+        </button>
+    </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-sm-2" id="purpleCounter">Purple: 0/9</div>
+    <div class="col-sm-2" id="brownCounter">Brown: 0/9</div>
+    <div class="col-sm-2" id="aquaCounter">Aqua: 0/9</div>
+    <div class="col-sm-2" id="silverCounter">Silver: 0/9</div>
+    <div class="col-sm-2" id="goldCounter">Gold: 0/9</div>
+    <div class="col-sm-2" id="stripCounter">Strip: 0/3</div>
+</div>
+
+<div id="claimedLots"></div>
+
+
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script>
+    $(document).ready(function () {
+        setupDrawDeck();
+       console.log(drawPile)
+    })
+
+
+</script>
+
+</body>
+
+
+</html>
