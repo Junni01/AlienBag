@@ -211,6 +211,28 @@ function drawEventCardForRetreat() {
 
 }
 
+function peekEventCard() {
+    if(eventDrawPile.length == 0) {
+        eventDrawPile.push(...eventDiscardPile);
+        eventDiscardPile = [];
+        shuffleEventDeck()
+    }
+    console.log(eventDrawPile)
+    let topEventCard = eventDrawPile[eventDrawPile.length -1];
+    let alienGroups = " ";
+    for(let group of topEventCard.Movers) {
+        console.log(group)
+        alienGroups += alienDict[group] + " ";
+    }
+
+    document.getElementById("movers").innerText = alienGroups;
+    document.getElementById("direction").innerText = "Move to: " + topEventCard.Direction;
+    document.getElementById("eventName").innerText = topEventCard.CardName;
+    document.getElementById("eventDesc").innerText = topEventCard.AppCardText;
+
+
+}
+
 function drawEventCard() {
     if(eventDrawPile.length == 0) {
         eventDrawPile.push(...eventDiscardPile);

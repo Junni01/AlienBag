@@ -67,38 +67,40 @@
                     <div class="card-body">
 
                         <div class="card-text text-center" id="attackInfo">
-                            <div class="row">
-                                <div class="col-sm-12">
+                            <div class="row text-center">
+                                <div class="col-sm-6 text-center">
                                     <button type="button" class="btn btn-dark attack-button"
                                             onclick="resolveAnAttack(2)"
-                                            data-toggle="modal" data-target="#attackModal" style="font-size: 2vmin">
+                                            data-toggle="modal" data-target="#attackModal"
+                                            style="font-size: 15px; margin-bottom: 20px">
                                         Creeper
                                     </button>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
+
+                                <div class="col-sm-6 text-center">
                                     <button type="button" class="btn btn-dark attack-button"
                                             onclick="resolveAnAttack(3)"
-                                            data-toggle="modal" data-target="#attackModal" style="font-size: 2vmin">
+                                            data-toggle="modal" data-target="#attackModal"
+                                            style="font-size: 15px; margin-bottom: 20px">
                                         Adult
                                     </button>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-12">
+                            <div class="row text-center">
+                                <div class="col-sm-6 text-center">
                                     <button type="button" class="btn btn-dark attack-button"
                                             onclick="resolveAnAttack(4)"
-                                            data-toggle="modal" data-target="#attackModal" style="font-size: 2vmin">
+                                            data-toggle="modal" data-target="#attackModal"
+                                            style="font-size: 15px; margin-bottom: 20px">
                                         Breeder
                                     </button>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12">
+
+                                <div class="col-sm-6 text-center">
                                     <button type="button" class="btn btn-dark attack-button"
                                             onclick="resolveAnAttack(5)"
-                                            data-toggle="modal" data-target="#attackModal" style="font-size: 2vmin">
+                                            data-toggle="modal" data-target="#attackModal"
+                                            style="font-size: 15px; margin-bottom: 20px">
                                         Queen
                                     </button>
                                 </div>
@@ -153,9 +155,24 @@
                 <div class="card">
                     <h5 class="card-header text-center">Events</h5>
                     <div class="card-body text-center">
-                        <button type="button" class="btn btn-dark" onclick="resolveEvent()" data-toggle="modal"
-                                data-target="#eventModal" style="font-size: 2vw">Resolve Event
-                        </button>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button type="button" class="btn btn-dark" onclick="resolveEvent()" data-toggle="modal"
+                                        data-target="#eventModal" style="font-size: 2vw">Resolve
+                                </button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button type="button" class="btn btn-dark" onclick="peekEventCard()"
+                                        data-toggle="modal"
+                                        data-target="#eventModal" style="font-size: 2vw">Peek
+                                </button>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="card-footer text-center">
                     </div>
@@ -173,7 +190,7 @@
                 </div>
                 <!-- Bag development Card -->
                 <div class="card" id="bagDevelopmentWindow">
-                    <h5 class="card-header">Bag development</h5>
+                    <h5 class="card-header text-center">Bag development</h5>
 
                     <div class="card-body text-center">
                         <button type="button" class="btn btn-dark" onclick="initiateBagDevelopment()"
@@ -457,26 +474,26 @@
                             Queen
                         </div>
                     </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <input type="number" id="queenInput" class="form-control form-control-sm"
-                               min="0" max="1">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="number" id="queenInput" class="form-control form-control-sm"
+                                   min="0" max="1">
+                        </div>
                     </div>
                 </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer justify-content-start">
+                    <button type="button" class="btn btn-dark btn-lg btn-block" id="addButton" onclick="addAliens()"
+                            data-dismiss="modal"
+                            style="font-size: 30px">Ok
+                    </button>
+
+                </div>
+
             </div>
-
-        <!-- Modal footer -->
-        <div class="modal-footer justify-content-start">
-            <button type="button" class="btn btn-dark btn-lg btn-block" id="addButton" onclick="addAliens()"
-                    data-dismiss="modal"
-                    style="font-size: 30px">Ok
-            </button>
-
         </div>
-
     </div>
-</div>
-</div>
 
 
 </div>

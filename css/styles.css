@@ -14,6 +14,29 @@
 
 }
 
+/* Chrome, Safari and Opera syntax */
+:-webkit-full-screen {
+    background-color: black;
+}
+
+/* Firefox syntax */
+:-moz-full-screen {
+    background-color: black;
+}
+
+/* IE/Edge syntax */
+:-ms-fullscreen {
+    background-color: black;
+}
+
+/* Standard syntax */
+:fullscreen {
+    background-color: black;
+}
+
+
+
+
 #tokenName {
     font-size: 100px;
 }
@@ -84,4 +107,29 @@ font-family: "venus rising";
     margin-right: -4px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+}
+
+.btn-circle.btn-sm {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    font-size: 8px;
+    text-align: center;
+}
+.btn-circle.btn-md {
+    width: 50px;
+    height: 50px;
+    padding: 7px 10px;
+    border-radius: 25px;
+    font-size: 10px;
+    text-align: center;
+}
+.btn-circle.btn-xl {
+    width: 140px;
+    height: 150px;
+    padding: 15px 26px;
+    border-radius: 35px;
+    font-size: 12px;
+    text-align: center;
 }
