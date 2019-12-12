@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29264c71-4230-4251-84f3-085de67f2b9c" name="Default Changelist" comment="">
+    <list default="true" id="29264c71-4230-4251-84f3-085de67f2b9c" name="Default Changelist" comment="Added Void Seeders expansion data">
+      <change afterPath="$PROJECT_DIR$/Data/VoidSeederAttacks.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/VoidSeederEvents.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/VoidSeederPanic.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/VoidSeederTokens.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/VoidSeederAttackCards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/VoidSeederEventCards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/VoidSeederPanicCards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/VoidSeederTokens.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Cards_and_Tokens.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Cards_and_Tokens.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/AlienAttackCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/BaseAttackCards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/AlienTokens.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/BaseTokens.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/EventCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/BaseEventCards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Game.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,15 +26,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1U7KnKUqRmHSOcAOGNs4jAfmzx1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -87,7 +100,13 @@
       <workItem from="1574702542602" duration="4000" />
       <workItem from="1574787837517" duration="10870000" />
       <workItem from="1574835771716" duration="617000" />
-      <workItem from="1574874354296" duration="9110000" />
+      <workItem from="1574874354296" duration="9134000" />
+      <workItem from="1575467897587" duration="2847000" />
+      <workItem from="1575628623974" duration="2092000" />
+      <workItem from="1575700802374" duration="11093000" />
+      <workItem from="1575911121473" duration="1208000" />
+      <workItem from="1576087911869" duration="1022000" />
+      <workItem from="1576130299939" duration="14144000" />
     </task>
     <servers />
   </component>
@@ -99,8 +118,14 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/AlienBag" />
     </ignored-roots>
+    <MESSAGE value="Added Void Seeders expansion data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Void Seeders expansion data" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="585" y="113" width="1292" height="813" key="CommitChangelistDialog2" timestamp="1576153845056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="113" width="1292" height="813" key="CommitChangelistDialog2/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576153845056" />
     <state x="615" y="339" key="FileChooserDialogImpl" timestamp="1574835787039">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -113,9 +138,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="164" key="SettingsEditor/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1574702407409" />
-    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1574788001829">
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576130323829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1574788001829" />
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576130323829" />
+    <state x="1927" y="75" width="1066" height="1028" maximized="true" key="dock-window-1" timestamp="1576148663071">
+      <screen x="1920" y="-271" width="1050" height="1640" />
+    </state>
+    <state x="1927" y="75" width="1066" height="1028" maximized="true" key="dock-window-1/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576148663071" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1576140826751">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576140826751" />
   </component>
 </project>

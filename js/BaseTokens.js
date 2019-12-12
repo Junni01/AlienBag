@@ -1,4 +1,4 @@
-LarvaTokens =[
+const LarvaTokens =[
     {
         "ID": 1,
         "AlienName": "Larva",
@@ -79,7 +79,7 @@ LarvaTokens =[
         "SummoningText": "Danger level 1 Larva Appears.",
         "Image Path": "~/img/"
     } ]
-var CreeperTokens = [
+const CreeperTokens = [
     {
         "ID": 9,
         "AlienName": "Creeper",
@@ -111,7 +111,7 @@ var CreeperTokens = [
         "Image Path": "~/img/"
     }
     ]
-var AdultTokens = [
+const AdultTokens = [
     {
         "ID": 12,
         "AlienName": "Adult",
@@ -232,7 +232,7 @@ var AdultTokens = [
         "SummoningText": "Danger level 4 Adult Appears",
         "Image Path": "~/img/"
     } ]
-var BreederTokens = [
+const BreederTokens = [
     {
         "ID": 24,
         "AlienName": "Breeder",
@@ -253,7 +253,7 @@ var BreederTokens = [
         "SummoningText": "Danger level 4 Breeder Appears",
         "Image Path": ""
     } ];
-QueenToken =
+const QueenToken =
     {
         "ID": 26,
         "AlienName": "Queen",
@@ -264,11 +264,11 @@ QueenToken =
         "SummoningText": "The Queen Appears! (danger level 4)",
         "Image Path": ""
     }
-    var BlankToken =
+   const baseBlankToken =
     {
         "ID": 27,
         "AlienName": "Blank",
-        "AlienId": 6,
+        "AlienId": 0,
         "DangerLevel": 0,
         "BagDevelopmentEffectTextCard": "Blank ? Add 1 Adult Intruder token to the Intruder bag. If there are no Adult Intruder tokens available, nothing happens. Return the Blank token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "Nothing happens.",
@@ -277,7 +277,7 @@ QueenToken =
     };
 
 
-alienDict = {
+const baseAlienDict = {
 
     1: "Larvae",
     2: "Creepers",

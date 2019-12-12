@@ -1,4 +1,4 @@
-EventCards = [
+const BaseEventCards = [
     {
         "ID": 1,
         "Movers": [

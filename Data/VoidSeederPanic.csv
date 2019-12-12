@@ -1,0 +1,21 @@
+Id,PanicName,CardText,AppText,InsanityLevel,SpecialRuleId
+1,Desctructive Outburst,"Place a Malfunction marker in the Room you are in, if there is none.","Place a Malfunction marker in the Room you are in, if there is none.",2,0
+2,Defeatism,Increase the Insanity level of every Character in the Room you are in (including you) by 1.,Increase the Insanity level of every Character in the Room you are in (including you) by 1.,3,0
+3,Blind Escape,Draw an Event card and move your Character through indicated corridor,Draw an Event card and move your Character through indicated corridor,2,0
+4,Desctruction,"Discard a Heavy Item from your hand, if possible (not a Heavy Object)","Discard a Heavy Item from your hand, if possible (not a Heavy Object)",4,0
+5,Insane Courage,Move your Character to a neighboring Room with a Void Seeder.,Move your Character to a neighboring Room with a Void Seeder.,2,0
+6,Sabotage,Set the item counter to 0 in the Room you are in.,Set the item counter to 0 in the Room you are in.,2,0
+7,Self-Mutilation,Deal 2 Light Wounds to yourself.,Deal 2 Light Wounds to yourself.,3,0
+8,Heart Attack,Your Character dies.,Your Character dies.,5,0
+9,Heart Attack,Your Character dies.,Your Character dies.,5,0
+10,Bloodlust,"Deal 1 Serious Wound to every other Character in the Room you are in. If you are alone, deal 1 Serious Wound to yourself.","Deal 1 Serious Wound to every other Character in the Room you are in. If you are alone, deal 1 Serious Wound to yourself.",3,0
+11,Demotivation,Each Character in the Room you are in (including yourself) discards 1 Action card from their hand. Increase your Insanity lever by 1.,Each Character in the Room you are in (including yourself) discards 1 Action card from their hand. Increase your Insanity lever by 1.,2,0
+12,Bloodlust,"Deal 1 Serious Wound to every other Character in the Room you are in. If you are alone, deal 1 Serious Wound to yourself.","Deal 1 Serious Wound to every other Character in the Room you are in. If you are alone, deal 1 Serious Wound to yourself.",3,0
+13,Demotivation,Each Character in the Room you are in (including yourself) discards 1 Action card from their hand. Increase your Insanity lever by 1.,Each Character in the Room you are in (including yourself) discards 1 Action card from their hand. Increase your Insanity lever by 1.,2,0
+14,Ripping of the Bandages,Deal 1 Light Wound to yourself and undress 1 Serious Wound.,Deal 1 Light Wound to yourself and undress 1 Serious Wound.,2,0
+15,Hopelessness,Draw 3 cards from your Action deck and remove one of them from the game. Discard the rest.,Draw 3 cards from your Action deck and remove one of them from the game. Discard the rest.,3,0
+16,Self-Mutilation,Deal 2 Light Wounds to yourself.,Deal 2 Light Wounds to yourself.,3,0
+17,Hallucinations,Discard all Ammo markers from one of your weapons.,Discard all Ammo markers from one of your weapons.,3,0
+18,Hallucinations,Discard all Ammo markers from one of your weapons.,Discard all Ammo markers from one of your weapons.,3,0
+19,Pyromaniac,"Place a Fire marker in the Room you are in, if there is none.","Place a Fire marker in the Room you are in, if there is none.",3,0
+20,,,,,

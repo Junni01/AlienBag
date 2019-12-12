@@ -1,0 +1,26 @@
+ID,AlienName,AlienId,DangerLevel,BagDevelopmentEffectTextCard,BagDevelopmentEffectTextApp,SummoningText,Image Path
+1,Void Seeder,8,1,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+2,Void Seeder,8,1,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+3,Void Seeder,8,1,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+4,Void Seeder,8,2,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+5,Void Seeder,8,2,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+6,Void Seeder,8,2,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+7,Void Seeder,8,2,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+8,Void Seeder,8,2,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+9,Void Seeder,8,3,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+10,Void Seeder,8,3,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+11,Void Seeder,8,3,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+12,Void Seeder,8,3,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+13,Void Seeder,8,3,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+14,Void Seeder,8,3,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+15,Void Seeder,8,4,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+16,Void Seeder,8,4,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+17,Void Seeder,8,4,,"All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",Void Seeder appears. Character's insanity level determines the enemy type.,~/img
+18,Blue Insanity Token,1,,,Player resolves a Panic card.,Place a noise marker in each Corridor connected to the corridor where the encounter took place. Resolve a Panic card.,~/img
+19,Red Insanity Token,2,,,Player resolves a Panic card.,Place a noise marker in each Corridor connected to the corridor where the encounter took place. Resolve a Panic card.,~/img
+20,Yellow Insanity Token,3,,,Player resolves a Panic card.,Place a noise marker in each Corridor connected to the corridor where the encounter took place. Resolve a Panic card.,~/img
+21,Green Insanity Token,4,,,Player resolves a Panic card.,Place a noise marker in each Corridor connected to the corridor where the encounter took place. Resolve a Panic card.,~/img
+22,Purple Insanity Token,5,,,Player resolves a Panic card.,Place a noise marker in each Corridor connected to the corridor where the encounter took place. Resolve a Panic card.,~/img
+23,Pink Insanity Token,6,,,Player resolves a Panic card.,Place a noise marker in each Corridor connected to the corridor where the encounter took place. Resolve a Panic card.,~/img
+24,Grey Insanity Token,7,,,Player resolves a Panic card.,Place a noise marker in each Corridor connected to the corridor where the encounter took place. Resolve a Panic card.,~/img
+25,Blank Token,9,,,Nothing Happens.,Place a noise marker in each Corridor connected to the corridor where the encounter took place.,~/img

@@ -1,4 +1,4 @@
-AlienAttackCards = [
+const BaseAttackCards = [
     {
         "ID": 1,
         "AttackName": "Slime",

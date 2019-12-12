@@ -8,33 +8,47 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
-<script src="js/EventCards.js"></script>
-<script src="js/AlienAttackCards.js"></script>
-<script src="js/AlienTokens.js"></script>
+<script src="js/BaseEventCards.js"></script>
+<script src="js/BaseAttackCards.js"></script>
+<script src="js/BaseTokens.js"></script>
+<script src="js/VoidSeederEventCards.js"></script>
+<script src="js/VoidSeederAttackCards.js"></script>
+<script src="js/VoidSeederTokens.js"></script>
+<script src="js/VoidSeederPanicCards.js"></script>
 <script src="js/Game.js"></script>
 
 <body>
 <div class="container-fluid">
     <!-- Player Select -->
-    <div class="row" id="playerSelector">
-        <div class="col-sm-12 text-center">
-            <div>
-                <h1 id="playerCountText">How Many Players?</h1>
-                <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(1)"
-                        style="font-size: 50px; width: 100px;">1
-                </button>
-                <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(2)"
-                        style="font-size: 50px; width: 100px;">2
-                </button>
-                <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(3)"
-                        style="font-size: 50px; width: 100px;">3
-                </button>
-                <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(4)"
-                        style="font-size: 50px; width: 100px;">4
-                </button>
-                <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(5)"
-                        style="font-size: 50px; width: 100px;">5
-                </button>
+    <div id="playerSelector">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <div>
+                    <h1 id="playerCountText">How Many Players?</h1>
+                    <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(1, 1)"
+                            style="font-size: 50px; width: 100px;">1
+                    </button>
+                    <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(2, 1)"
+                            style="font-size: 50px; width: 100px;">2
+                    </button>
+                    <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(3, 1)"
+                            style="font-size: 50px; width: 100px;">3
+                    </button>
+                    <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(4, 1)"
+                            style="font-size: 50px; width: 100px;">4
+                    </button>
+                    <button type="button" class="btn btn-dark playerSelector" onclick="setupAlienBag(5, 1)"
+                            style="font-size: 50px; width: 100px;">5
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary" value="1">Intruders</button>
+                    <button type="button" class="btn btn-secondary" value="2">Void Seeders</button>
+                </div>
             </div>
         </div>
     </div>
@@ -360,7 +374,7 @@
                             <div id="eventDesc" style="font-size: 25px; margin-left: 20%; margin-right: 20%"></div>
                         </div>
                     </div>
-<br>
+                    <br>
                     <div id="addTokensDialog1" style="display: none">
                         <div class="row">
                             <div class="col-sm-12">Was someone infested?</div>
@@ -386,7 +400,8 @@
                             <div class="col-sm-12">
                                 <button type="button" class="btn btn-dark" data-dismiss="modal">Top of deck
                                 </button>
-                                <button type="button" class="btn btn-dark" data-dismiss="modal" onclick="returnEventToBottom()">Bottom of deck
+                                <button type="button" class="btn btn-dark" data-dismiss="modal"
+                                        onclick="returnEventToBottom()">Bottom of deck
                                 </button>
                             </div>
                         </div>
@@ -536,7 +551,7 @@
         addTokensToBag(4, breeder)
         let queen = document.getElementById("queenInput").value;
         document.getElementById("queenInput").value = "";
-        if (queen != 0) {
+        if (queen !== 0) {
             addTokensToBag(5, 1)
         }
     }
