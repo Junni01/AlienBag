@@ -238,7 +238,7 @@ const pinkInsanityToken =
     {
         "ID": 23,
         "AlienName": "Pink Insanity Token",
-        "AlienId": 6,
+        "AlienId": 7,
         "DangerLevel": null,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "Player resolves a Panic card.",
@@ -249,7 +249,7 @@ const greyInsanityToken =
     {
         "ID": 24,
         "AlienName": "Grey Insanity Token",
-        "AlienId": 7,
+        "AlienId": 6,
         "DangerLevel": null,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "Player resolves a Panic card.",

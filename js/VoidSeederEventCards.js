@@ -213,12 +213,12 @@ const voidSeederEventCards = [
         "BreederMove": "",
         "Queenmove": "",
         "CardName": "Whispers",
-        "RealCardText": "Draw another Event card, then place a Noise marker in each Corridor with the same number than the one on this new Evetn card and that is connected to a Room containing a Character. If a Corridor already contains a Noise marker, resolve and Encounter instead. Afterward discard the new Event card without resolving it.",
+        "RealCardText": "Draw another Event card, then place a Noise marker in each Corridor with the same number than the one on this new Event card and that is connected to a Room containing a Character. If a Corridor already contains a Noise marker, resolve and Encounter instead. Afterward discard the new Event card without resolving it.",
         "AppCardText": "Place a noise marker in in each Corridor numbered above. If a Corridor already contains a Noise marker, resolve and Encounter instead. ",
         "RemoveAndReshuffleDeck": false,
         "ReshuffleBack": false,
         "AlienBagSpecialCase": true,
-        "SpecialCaseID": 1
+        "SpecialCaseID": 3
     },
     {
         "ID": 14,

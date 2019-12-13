@@ -1,7 +1,7 @@
 const voidSeederPanicCards = [
     {
         "Id": 1,
-        "PanicName": "Desctructive Outburst",
+        "PanicName": "Destructive Outburst",
         "CardText": "Place a Malfunction marker in the Room you are in, if there is none.",
         "AppText": "Place a Malfunction marker in the Room you are in, if there is none.",
         "InsanityLevel": 2,
@@ -19,13 +19,13 @@ const voidSeederPanicCards = [
         "Id": 3,
         "PanicName": "Blind Escape",
         "CardText": "Draw an Event card and move your Character through indicated corridor",
-        "AppText": "Draw an Event card and move your Character through indicated corridor",
+        "AppText": "Move your character through corridor",
         "InsanityLevel": 2,
-        "SpecialRuleId": 0
+        "SpecialRuleId": 1
     },
     {
         "Id": 4,
-        "PanicName": "Desctruction",
+        "PanicName": "Destruction",
         "CardText": "Discard a Heavy Item from your hand, if possible (not a Heavy Object)",
         "AppText": "Discard a Heavy Item from your hand, if possible (not a Heavy Object)",
         "InsanityLevel": 4,
@@ -42,8 +42,8 @@ const voidSeederPanicCards = [
     {
         "Id": 6,
         "PanicName": "Sabotage",
-        "CardText": "Set the item counter to 0 in the Room you are in.",
-        "AppText": "Set the item counter to 0 in the Room you are in.",
+        "CardText": "Set the item counter to zero in the Room you are in.",
+        "AppText": "Set the item counter to zero in the Room you are in.",
         "InsanityLevel": 2,
         "SpecialRuleId": 0
     },

@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29264c71-4230-4251-84f3-085de67f2b9c" name="Default Changelist" comment="Added Void Seeders expansion data">
-      <change afterPath="$PROJECT_DIR$/Data/VoidSeederAttacks.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/VoidSeederEvents.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/VoidSeederPanic.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/VoidSeederTokens.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/VoidSeederAttackCards.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/VoidSeederEventCards.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/VoidSeederPanicCards.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/VoidSeederTokens.js" afterDir="false" />
+    <list default="true" id="29264c71-4230-4251-84f3-085de67f2b9c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Cards_and_Tokens.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Cards_and_Tokens.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/AlienAttackCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/BaseAttackCards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/AlienTokens.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/BaseTokens.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/EventCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/BaseEventCards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/BaseEventCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/BaseEventCards.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/VoidSeederEventCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/VoidSeederEventCards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/VoidSeederPanicCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/VoidSeederPanicCards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/VoidSeederTokens.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/VoidSeederTokens.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +44,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TheExtraComputer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../startbootstrap-shop-homepage-gh-pages" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -106,8 +100,17 @@
       <workItem from="1575700802374" duration="11093000" />
       <workItem from="1575911121473" duration="1208000" />
       <workItem from="1576087911869" duration="1022000" />
-      <workItem from="1576130299939" duration="14144000" />
+      <workItem from="1576130299939" duration="22686000" />
+      <workItem from="1576255003955" duration="14940000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Void Seeders expansion data">
+      <created>1576154149540</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576154149540</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,14 +125,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added Void Seeders expansion data" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="113" width="1292" height="813" key="CommitChangelistDialog2" timestamp="1576153845056">
+    <state x="585" y="113" width="1292" height="813" key="CommitChangelistDialog2" timestamp="1576154148644">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="113" width="1292" height="813" key="CommitChangelistDialog2/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576153845056" />
-    <state x="615" y="339" key="FileChooserDialogImpl" timestamp="1574835787039">
+    <state x="585" y="113" width="1292" height="813" key="CommitChangelistDialog2/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576154148644" />
+    <state x="615" y="339" key="FileChooserDialogImpl" timestamp="1576257063875">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="615" y="339" key="FileChooserDialogImpl/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1574835787039" />
+    <state x="615" y="339" key="FileChooserDialogImpl/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576257063875" />
     <state x="767" y="230" key="RollbackChangesDialog" timestamp="1574703334093">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -142,13 +145,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576130323829" />
-    <state x="1927" y="75" width="1066" height="1028" maximized="true" key="dock-window-1" timestamp="1576148663071">
-      <screen x="1920" y="-271" width="1050" height="1640" />
-    </state>
-    <state x="1927" y="75" width="1066" height="1028" maximized="true" key="dock-window-1/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576148663071" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1576140826751">
+    <state x="516" y="115" width="1066" height="1028" key="dock-window-1" timestamp="1576269014083">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576140826751" />
+    <state x="516" y="115" width="1066" height="1028" key="dock-window-1/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576269014083" />
+    <state x="1920" y="17" width="1066" height="1028" maximized="true" key="dock-window-2" timestamp="1576268199161">
+      <screen x="1920" y="-271" width="1050" height="1640" />
+    </state>
+    <state x="1920" y="17" width="1066" height="1028" maximized="true" key="dock-window-2/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576268199161" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1576269362472">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576269362472" />
   </component>
 </project>
