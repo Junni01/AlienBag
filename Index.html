@@ -60,7 +60,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100 " id="bagWindow">
                         <div class="card-body">
-                            <h4 class="card-title">Summon Intruders</h4>
+                            <h4 class="card-title text-center">Summon Intruders</h4>
                             <button type="button" class="btn btn-dark btn-block" onclick="spawnAlien()" data-toggle="modal"
                                     data-target="#summonModal">Summon
                             </button>
@@ -98,7 +98,6 @@
                                         </button>
                                     </div>
                                 </div>
-                                <br>
                                 <div class="row text-center text-center">
                                     <div class="col-sm-12">
                                         <button type="button" class="btn btn-dark" onclick="resolveHealthCheck(2)"
@@ -159,7 +158,12 @@
                         <br>
                         <button type="button" class="btn btn-dark" onclick="peekEventCard()"
                                 data-toggle="modal"
-                                data-target="#eventModal">Peek
+                                data-target="#eventModal">Peek Event
+                        </button>
+
+                        <button type="button" class="btn btn-dark" data-toggle="modal" id="panicButton" data-target="#panicModal"
+                                onclick="resolvePanicCard()"
+                        >Panic Card
                         </button>
 
                     </div>
@@ -177,7 +181,9 @@
                         <button type="button" class="btn btn-dark" onclick="initiateBagDevelopment()"
                                 data-toggle="modal" data-target="#devModal">Resolve
                         </button>
-
+                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#addModal"
+                        >Add Tokens
+                        </button>
 
                     </div>
                     <div class="card-footer text-center">
@@ -190,9 +196,7 @@
                 <div class="card h-100" id="bagAddWindow">
                     <div id="addTokensDialog3" class="card-body text-center">
                         <h5 class="card-title text-center">Misc</h5>
-                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#addModal"
-                                >Add Tokens
-                        </button>
+
                         <button type="button" class="btn btn-dark" onclick="randomDirection()" data-toggle="modal"
                                 data-target="#randomDirectionModal">Random Direction
                         </button>
@@ -200,13 +204,8 @@
                                 data-target="#noiseDieModal">Roll for Noise
                         </button>
 
-
-                        <button type="button" class="btn btn-dark" data-toggle="modal" id="panicButton" data-target="#panicModal"
-                                onclick="resolvePanicCard()"
-                                >Panic Card
-                        </button>
                         <button type="button" class="btn btn-dark" data-toggle="modal" id="playersButton" data-target="#playersModal"
-                        >Players
+                        >Add Players
                         </button>
 
                     </div>
@@ -226,9 +225,9 @@
 
 <div class="container">
     <div class="text-center" id="shuffleFooter">
-        <button type="button" class="btn btn-dark" onclick="shuffleBag()">Shuffle Bag</button>
+<!--        <button type="button" class="btn btn-dark" onclick="shuffleBag()">Shuffle Bag</button>
         <button type="button" class="btn btn-dark" onclick="shuffleEventDeck()">Shuffle Event Deck</button>
-        <button type="button" class="btn btn-dark" onclick="shuffleAttackDeck()">Shuffle Attack Deck</button>
+        <button type="button" class="btn btn-dark" onclick="shuffleAttackDeck()">Shuffle Attack Deck</button>-->
         <button type="button" class="btn btn-dark" onclick="fullScreen()">Fullscreen</button>
     </div>
 </div>
@@ -250,7 +249,7 @@
                 <div id="tokenName"></div>
                 <div id="dangerTitle"></div>
                 <div id="dangerLevel"></div>
-                <div id="tokenDescription"></div>
+                <div id="tokenDescription" style="font-size: 4vmin"></div>
 
 
             </div>

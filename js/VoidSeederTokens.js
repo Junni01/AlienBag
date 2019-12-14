@@ -15,7 +15,7 @@ const voidSeederTokens = [
         "DangerLevel": 1,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     },
     {
@@ -25,7 +25,7 @@ const voidSeederTokens = [
         "DangerLevel": 1,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     },
     {
@@ -35,7 +35,7 @@ const voidSeederTokens = [
         "DangerLevel": 1,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     },
     {
@@ -45,7 +45,7 @@ const voidSeederTokens = [
         "DangerLevel": 2,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     },
     {
@@ -55,7 +55,7 @@ const voidSeederTokens = [
         "DangerLevel": 2,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     },
     {
@@ -65,7 +65,7 @@ const voidSeederTokens = [
         "DangerLevel": 2,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     },
     {
@@ -75,7 +75,7 @@ const voidSeederTokens = [
         "DangerLevel": 2,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     },
     {
@@ -85,7 +85,7 @@ const voidSeederTokens = [
         "DangerLevel": 2,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     },
     {
@@ -95,7 +95,7 @@ const voidSeederTokens = [
         "DangerLevel": 3,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     },
     {
@@ -105,7 +105,7 @@ const voidSeederTokens = [
         "DangerLevel": 3,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     },
     {
@@ -115,7 +115,7 @@ const voidSeederTokens = [
         "DangerLevel": 3,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     },
     {
@@ -125,7 +125,7 @@ const voidSeederTokens = [
         "DangerLevel": 3,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     },
     {
@@ -135,7 +135,7 @@ const voidSeederTokens = [
         "DangerLevel": 3,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     },
     {
@@ -145,7 +145,7 @@ const voidSeederTokens = [
         "DangerLevel": 3,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     },
     {
@@ -155,7 +155,7 @@ const voidSeederTokens = [
         "DangerLevel": 4,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     },
     {
@@ -165,7 +165,7 @@ const voidSeederTokens = [
         "DangerLevel": 4,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     },
     {
@@ -175,7 +175,7 @@ const voidSeederTokens = [
         "DangerLevel": 4,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "All players perform a Noise roll in order, except if their Character is already in Combat with a Void Seeder or a Lair.",
-        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type.",
+        "SummoningText": "Void Seeder appears. Character's insanity level determines the enemy type. Surprise attack: draw 1 Contamination card and Resolve a Panic card instead of drawing an attack card.",
         "Image Path": "~/img"
     }
 ];
@@ -187,7 +187,7 @@ const blueInsanityToken =
         "DangerLevel": null,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "Player resolves a Panic card.",
-        "SummoningText": "Place a noise marker in each Corridor connected to the corridor where the encounter took place. Resolve a Panic card.",
+        "SummoningText": "Place a noise marker in each Corridor connected to the Room where the encounter took place. The player resolves a Panic card.",
         "Image Path": "~/img"
     }
 const redInsanityToken =
@@ -198,7 +198,7 @@ const redInsanityToken =
         "DangerLevel": null,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "Player resolves a Panic card.",
-        "SummoningText": "Place a noise marker in each Corridor connected to the corridor where the encounter took place. Resolve a Panic card.",
+        "SummoningText": "Place a noise marker in each Corridor connected to the Room where the encounter took place. The player resolves a Panic card.",
         "Image Path": "~/img"
     }
 const yellowInsanityToken =
@@ -209,7 +209,7 @@ const yellowInsanityToken =
         "DangerLevel": null,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "Player resolves a Panic card.",
-        "SummoningText": "Place a noise marker in each Corridor connected to the corridor where the encounter took place. Resolve a Panic card.",
+        "SummoningText": "Place a noise marker in each Corridor connected to the Room where the encounter took place. The player resolves a Panic card.",
         "Image Path": "~/img"
     }
 const greenInsanityToken =
@@ -220,7 +220,7 @@ const greenInsanityToken =
         "DangerLevel": null,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "Player resolves a Panic card.",
-        "SummoningText": "Place a noise marker in each Corridor connected to the corridor where the encounter took place. Resolve a Panic card.",
+        "SummoningText": "Place a noise marker in each Corridor connected to the Room where the encounter took place. The player resolves a Panic card.",
         "Image Path": "~/img"
     }
 const purpleInsanityToken =
@@ -231,7 +231,7 @@ const purpleInsanityToken =
         "DangerLevel": null,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "Player resolves a Panic card.",
-        "SummoningText": "Place a noise marker in each Corridor connected to the corridor where the encounter took place. Resolve a Panic card.",
+        "SummoningText": "Place a noise marker in each Corridor connected to the Room where the encounter took place. The player resolves a Panic card.",
         "Image Path": "~/img"
     }
 const pinkInsanityToken =
@@ -242,7 +242,7 @@ const pinkInsanityToken =
         "DangerLevel": null,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "Player resolves a Panic card.",
-        "SummoningText": "Place a noise marker in each Corridor connected to the corridor where the encounter took place. Resolve a Panic card.",
+        "SummoningText": "Place a noise marker in each Corridor connected to the Room where the encounter took place. The player resolves a Panic card.",
         "Image Path": "~/img"
     }
 const greyInsanityToken =
@@ -253,7 +253,7 @@ const greyInsanityToken =
         "DangerLevel": null,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "Player resolves a Panic card.",
-        "SummoningText": "Place a noise marker in each Corridor connected to the corridor where the encounter took place. Resolve a Panic card.",
+        "SummoningText": "Place a noise marker in each Corridor connected to the Room where the encounter took place. The player resolves a Panic card.",
         "Image Path": "~/img"
     }
 const voidSeedersBlankToken =
@@ -264,6 +264,6 @@ const voidSeedersBlankToken =
         "DangerLevel": null,
         "BagDevelopmentEffectTextCard": "",
         "BagDevelopmentEffectTextApp": "Nothing Happens.",
-        "SummoningText": "Place a noise marker in each Corridor connected to the corridor where the encounter took place.",
+        "SummoningText": "Place a noise marker in each Corridor connected to the Room where the encounter took place.",
         "Image Path": "~/img"
     }

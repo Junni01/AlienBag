@@ -450,7 +450,7 @@ function spawnAlien() {
 
     let token;
 
-    if (enemyType === 1) {
+    if (enemyType === BaseIntruders) {
         token = drawFromBag();
 
         if (token.AlienId !== 0) {
@@ -464,22 +464,25 @@ function spawnAlien() {
         }
 
 
-    } else if (enemyType === 2) {
+    } else if (enemyType === VoidSeeders) {
 
         token = drawFromVoidSeederBag();
 
         if (token.AlienId === 0) {
-            document.getElementById("tokenName").innerText = token.SummoningText;
+            document.getElementById("tokenName").innerText = "Nothing Appears";
             document.getElementById("dangerTitle").innerText = "";
             document.getElementById("dangerLevel").innerText = "";
+            document.getElementById("tokenDescription").innerText = token.SummoningText;
         } else if (token.AlienId === 8) {
-            document.getElementById("dangerTitle").innerText = "Surprise attack: 1 Contamination card and resolve a Panic card "
+            document.getElementById("dangerTitle").innerText = "Danger Level:";
             document.getElementById("dangerLevel").innerText = token.DangerLevel;
-            document.getElementById("tokenName").innerText = token.SummoningText;
+            document.getElementById("tokenName").innerText = "Void Seeder";
+            document.getElementById("tokenDescription").innerText = token.SummoningText;
         } else {
             document.getElementById("tokenName").innerText = "Insanity";
-            document.getElementById("dangerTitle").innerText = token.SummoningText;
+            document.getElementById("dangerTitle").innerText = ""
             document.getElementById("dangerLevel").innerText = "";
+            document.getElementById("tokenDescription").innerText = token.SummoningText;;
         }
 
     } else {
@@ -814,7 +817,7 @@ function resolveEvent() {
     document.getElementById("peekDialog").style.display = 'none';
     let eventCard = drawEventCard()
     console.log(eventCard)
-    let groups = " ";
+    let groups = "";
     for (let group of eventCard.Movers) {
         console.log(group)
         groups += alienDict[group] + " ";

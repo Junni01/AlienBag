@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29264c71-4230-4251-84f3-085de67f2b9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/BaseEventCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/BaseEventCards.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/VoidSeederEventCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/VoidSeederEventCards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/VoidSeederPanicCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/VoidSeederPanicCards.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/VoidSeederTokens.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/VoidSeederTokens.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +97,7 @@
       <workItem from="1575911121473" duration="1208000" />
       <workItem from="1576087911869" duration="1022000" />
       <workItem from="1576130299939" duration="22686000" />
-      <workItem from="1576255003955" duration="14940000" />
+      <workItem from="1576255003955" duration="18402000" />
     </task>
     <task id="LOCAL-00001" summary="Added Void Seeders expansion data">
       <created>1576154149540</created>
@@ -110,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576154149540</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="New modals and functionality">
+      <created>1576272493126</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576272493126</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,13 +125,14 @@
       <path value="$PROJECT_DIR$/AlienBag" />
     </ignored-roots>
     <MESSAGE value="Added Void Seeders expansion data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Void Seeders expansion data" />
+    <MESSAGE value="New modals and functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="New modals and functionality" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="113" width="1292" height="813" key="CommitChangelistDialog2" timestamp="1576154148644">
+    <state x="585" y="113" width="1292" height="813" key="CommitChangelistDialog2" timestamp="1576272492051">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="113" width="1292" height="813" key="CommitChangelistDialog2/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576154148644" />
+    <state x="585" y="113" width="1292" height="813" key="CommitChangelistDialog2/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576272492051" />
     <state x="615" y="339" key="FileChooserDialogImpl" timestamp="1576257063875">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -149,10 +153,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="516" y="115" width="1066" height="1028" key="dock-window-1/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576269014083" />
-    <state x="1920" y="17" width="1066" height="1028" maximized="true" key="dock-window-2" timestamp="1576268199161">
-      <screen x="1920" y="-271" width="1050" height="1640" />
+    <state x="313" y="-21" width="1066" height="1028" maximized="true" key="dock-window-2" timestamp="1576313537387">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1920" y="17" width="1066" height="1028" maximized="true" key="dock-window-2/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576268199161" />
+    <state x="313" y="-21" width="1066" height="1028" maximized="true" key="dock-window-2/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576313537387" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1576314657483">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576314657483" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1576269362472">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
