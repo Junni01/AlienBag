@@ -154,8 +154,8 @@ const BaseAttackCards = [
     {
         "ID": 13,
         "AttackName": "Summoning",
-        "AttackDescriptionApp": " appears in the Room. This new Intruder doesn't perform a Surprise Attack or Attack in the current Phase.",
-        "AttackDescriptionCard": "Draw 1 Intruder token from the Intruder bag and place this intruder in the Room. This new Intruder doesn't perform a Surprise Attack or Attack in the current Phase.",
+        "AttackDescriptionApp": " appears in the Room. This new Intruder doesn't perform any attacks (including Surprise Attacks) during the Action that summoned it",
+        "AttackDescriptionCard": "Draw 1 Intruder token from the Intruder bag and place this intruder in the Room. This new Intruder doesn't perform any attacks (including Surprise Attacks) during the Action that summoned it.",
         "AlienHealth": 3,
         "AttackingTypes": [
             2,
@@ -166,8 +166,8 @@ const BaseAttackCards = [
     {
         "ID": 14,
         "AttackName": "Transformation",
-        "AttackDescriptionApp": "Change a Creeper into a Breeder. If the player has no cards in hand the Breeder makes a Surprise Attack.",
-        "AttackDescriptionCard": "Change a Creeper into a Breeder. If the player has no cards in hand the Breeder makes a Surprise Attack.",
+        "AttackDescriptionApp": "Replace the attacking Creeper with a Breeder (if available). If the player has no cards in hand the Breeder makes a Surprise Attack.",
+        "AttackDescriptionCard": "Replace the attacking Creeper with a Breeder (if available). If the player has no cards in hand the Breeder makes a Surprise Attack.",
         "AlienHealth": 5,
         "AttackingTypes": [
             2

@@ -905,7 +905,9 @@ function resolvePanicCard() {
     console.log("discarding card")
     panicDiscardPile.push(drawnCard);
 
-    document.getElementById("panicName").innerText = drawnCard.PanicName + " (" + drawnCard.InsanityLevel + "+)";
+    document.getElementById("panicName").innerText = drawnCard.PanicName;
+    document.getElementById("panicLevelTitle").innerText = "Insanity Level: "
+    document.getElementById("panicLevel").innerText = drawnCard.InsanityLevel + "+"
 
     if(drawnCard.SpecialRuleId === 1) {
         let randomCorridor = drawEventCardForRetreat()

@@ -2,19 +2,19 @@ const voidSeederAttackCards = [
     {
         "ID": 1,
         "AttackName": "Frenzy",
-        "AttackDescriptionApp": "Any Character in the Room who has suffered at least 1 Serious Wound dies. All other Characters in this Room suffer 1 Serious Wound and increase their insanity level.",
-        "AttackDescriptionCard": "Any Character in the Room who has suffered at least 1 Serious Wound dies. All other Characters in this Room suffer 1 Serious Wound and increase their insanity level.",
+        "AttackDescriptionApp": "All Characters in the Room who have at least 2 Serious Wounds die. Any other Characters in this Room suffer 1 Serious Wound.",
+        "AttackDescriptionCard": "All Characters in the Room who have at least 2 Serious Wounds die. Any other Characters in this Room suffer 1 Serious Wound.",
         "AlienHealth": 2,
-        "AttackingTypes": [2,3],
+        "AttackingTypes": [4,5],
         "SpecialRule": 0
     },
     {
         "ID": 2,
         "AttackName": "Frenzy",
-        "AttackDescriptionApp": "Any Character in the Room who has suffered at least 1 Serious Wound dies. All other Characters in this Room suffer 1 Serious Wound and increase their insanity level.",
-        "AttackDescriptionCard": "Any Character in the Room who has suffered at least 1 Serious Wound dies. All other Characters in this Room suffer 1 Serious Wound and increase their insanity level.",
+        "AttackDescriptionApp": "All Characters in the Room who have at least 2 Serious Wounds die. Any other Characters in this Room suffer 1 Serious Wound.",
+        "AttackDescriptionCard": "All Characters in the Room who have at least 2 Serious Wounds die. Any other Characters in this Room suffer 1 Serious Wound.",
         "AlienHealth": 6,
-        "AttackingTypes": [2,3],
+        "AttackingTypes": [4,5],
         "SpecialRule": 0
     },
     {
@@ -56,8 +56,8 @@ const voidSeederAttackCards = [
     {
         "ID": 7,
         "AttackName": "Duplicate",
-        "AttackDescriptionApp": "Take the Void Seeder miniature corresponding to the symbol of the Character's Insanity level on the Insanity track and place it in the Room. This Void Seeder doesn't perform a Surprise Attack nor attacks during the current Attack step.",
-        "AttackDescriptionCard": "Take the Void Seeder miniature corresponding to the symbol of the Character's Insanity level on the Insanity track and place it in the Room. This Void Seeder doesn't perform a Surprise Attack nor attacks during the current Attack step.",
+        "AttackDescriptionApp": "Take a Void Seeder Miniature of the same type as the attacking one and place it in the Room. The Void Seeder doesn't perform a Surprise Attack nor attacks during the current Attack step.",
+        "AttackDescriptionCard": "Take a Void Seeder Miniature of the same type as the attacking one and place it in the Room. The Void Seeder doesn't perform a Surprise Attack nor attacks during the current Attack step.",
         "AlienHealth": 3,
         "AttackingTypes": [2,3],
         "SpecialRule": 0
@@ -65,15 +65,15 @@ const voidSeederAttackCards = [
     {
         "ID": 8,
         "AttackName": "Duplicate",
-        "AttackDescriptionApp": "Take the Void Seeder miniature corresponding to the symbol of the Character's Insanity level on the Insanity track and place it in the Room. This Void Seeder doesn't perform a Surprise Attack nor attacks during the current Attack step.",
-        "AttackDescriptionCard": "Take the Void Seeder miniature corresponding to the symbol of the Character's Insanity level on the Insanity track and place it in the Room. This Void Seeder doesn't perform a Surprise Attack nor attacks during the current Attack step.",
+        "AttackDescriptionApp": "Take a Void Seeder Miniature of the same type as the attacking one and place it in the Room. The Void Seeder doesn't perform a Surprise Attack nor attacks during the current Attack step.",
+        "AttackDescriptionCard": "Take a Void Seeder Miniature of the same type as the attacking one and place it in the Room. The Void Seeder doesn't perform a Surprise Attack nor attacks during the current Attack step.",
         "AlienHealth": 3,
         "AttackingTypes": [2,3],
         "SpecialRule": 0
     },
     {
         "ID": 9,
-        "AttackName": "Terror",
+        "AttackName": "Dread",
         "AttackDescriptionApp": "The Character suffers 1 Serious Wound. Draw and resolve a Panic card.",
         "AttackDescriptionCard": "The Character suffers 1 Serious Wound. Draw and resolve a Panic card.",
         "AlienHealth": 4,
@@ -82,7 +82,7 @@ const voidSeederAttackCards = [
     },
     {
         "ID": 10,
-        "AttackName": "Terror",
+        "AttackName": "Dread",
         "AttackDescriptionApp": "The Character suffers 1 Serious Wound. Draw and resolve a Panic card.",
         "AttackDescriptionCard": "The Character suffers 1 Serious Wound. Draw and resolve a Panic card.",
         "AlienHealth": 0,
@@ -145,7 +145,7 @@ const voidSeederAttackCards = [
     },
     {
         "ID": 17,
-        "AttackName": "Fear",
+        "AttackName": "Dismay",
         "AttackDescriptionApp": "The Character gets a Contamination card. Draw and resolve a Panic card.",
         "AttackDescriptionCard": "The Character gets a Contamination card. Draw and resolve a Panic card.",
         "AlienHealth": 5,
@@ -154,7 +154,7 @@ const voidSeederAttackCards = [
     },
     {
         "ID": 18,
-        "AttackName": "Fear",
+        "AttackName": "Dismay",
         "AttackDescriptionApp": "The Character gets a Contamination card. Draw and resolve a Panic card.",
         "AttackDescriptionCard": "The Character gets a Contamination card. Draw and resolve a Panic card.",
         "AlienHealth": 4,
@@ -163,7 +163,7 @@ const voidSeederAttackCards = [
     },
     {
         "ID": 19,
-        "AttackName": "Fear",
+        "AttackName": "Dismay",
         "AttackDescriptionApp": "The Character gets a Contamination card. Draw and resolve a Panic card.",
         "AttackDescriptionCard": "The Character gets a Contamination card. Draw and resolve a Panic card.",
         "AlienHealth": 2,
@@ -172,7 +172,7 @@ const voidSeederAttackCards = [
     },
     {
         "ID": 20,
-        "AttackName": "Fear",
+        "AttackName": "Dismay",
         "AttackDescriptionApp": "The Character gets a Contamination card. Draw and resolve a Panic card.",
         "AttackDescriptionCard": "The Character gets a Contamination card. Draw and resolve a Panic card.",
         "AlienHealth": 2,

@@ -34,8 +34,8 @@ const voidSeederPanicCards = [
     {
         "Id": 5,
         "PanicName": "Insane Courage",
-        "CardText": "Move your Character to a neighboring Room with a Void Seeder.",
-        "AppText": "Move your Character to a neighboring Room with a Void Seeder.",
+        "CardText": "Move your Character to a neighboring Room with a Void Seeder or Lair if possible.",
+        "AppText": "Move your Character to a neighboring Room with a Void Seeder or Lair if possible",
         "InsanityLevel": 2,
         "SpecialRuleId": 0
     },
@@ -97,9 +97,9 @@ const voidSeederPanicCards = [
     },
     {
         "Id": 13,
-        "PanicName": "Demotivation",
-        "CardText": "Each Character in the Room you are in (including yourself) discards 1 Action card from their hand. Increase your Insanity lever by 1.",
-        "AppText": "Each Character in the Room you are in (including yourself) discards 1 Action card from their hand. Increase your Insanity lever by 1.",
+        "PanicName": "Ripping of the Bandages",
+        "CardText": "Deal 1 Light Wound to yourself and undress 1 Serious Wound.",
+        "AppText": "Deal 1 Light Wound to yourself and undress 1 Serious Wound.",
         "InsanityLevel": 2,
         "SpecialRuleId": 0
     },
@@ -114,8 +114,8 @@ const voidSeederPanicCards = [
     {
         "Id": 15,
         "PanicName": "Hopelessness",
-        "CardText": "Draw 3 cards from your Action deck and remove one of them from the game. Discard the rest.",
-        "AppText": "Draw 3 cards from your Action deck and remove one of them from the game. Discard the rest.",
+        "CardText": "Draw 3 cards from your Action deck and remove one of them (not a Contamination card) from the game. Discard the rest.",
+        "AppText": "Draw 3 cards from your Action deck and remove one of them (not a Contamination card) from the game. Discard the rest.",
         "InsanityLevel": 3,
         "SpecialRuleId": 0
     },
@@ -153,10 +153,10 @@ const voidSeederPanicCards = [
     },
     {
         "Id": 20,
-        "PanicName": "Card Missing",
-        "CardText": "Card Missing Text",
-        "AppText": "Card Missing Text",
-        "InsanityLevel": 0,
+        "PanicName": "Sabotage",
+        "CardText": "Set the item counter to zero in the Room you are in.",
+        "AppText": "Set the item counter to zero in the Room you are in.",
+        "InsanityLevel": 2,
         "SpecialRuleId": 0
     }
 ]

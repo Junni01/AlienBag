@@ -31,6 +31,10 @@
     background-color: black;
 }
 
+.player-button {
+    text-shadow: 2px 2px black;
+    width: 150px;
+}
 
 
 
