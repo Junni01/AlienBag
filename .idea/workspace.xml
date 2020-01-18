@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29264c71-4230-4251-84f3-085de67f2b9c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WarriorKnights/Index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WarriorKnights/Setup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/Cards_and_Tokens.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Cards_and_Tokens.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/BaseAttackCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/BaseAttackCards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/BaseTokens.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/BaseTokens.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/VoidSeederTokens.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/VoidSeederTokens.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +100,7 @@
       <workItem from="1576255003955" duration="25303000" />
       <workItem from="1576516870763" duration="2871000" />
       <workItem from="1577380272482" duration="2775000" />
+      <workItem from="1579352327846" duration="924000" />
     </task>
     <task id="LOCAL-00001" summary="Added Void Seeders expansion data">
       <created>1576154149540</created>
