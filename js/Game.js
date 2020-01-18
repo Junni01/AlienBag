@@ -95,7 +95,7 @@ let players = [
         color: "Pink",
         id: 7,
         active: true
-    }]
+    }];
 
 var enemyType = 1;
 

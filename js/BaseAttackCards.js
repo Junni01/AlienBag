@@ -154,7 +154,7 @@ const BaseAttackCards = [
     {
         "ID": 13,
         "AttackName": "Summoning",
-        "AttackDescriptionApp": " appears in the Room. This new Intruder doesn't perform any attacks (including Surprise Attacks) during the Action that summoned it",
+        "AttackDescriptionApp": " appears in the Room(place it's miniature on the board). This new Intruder doesn't perform any attacks (including Surprise Attacks) during the Action that summoned it",
         "AttackDescriptionCard": "Draw 1 Intruder token from the Intruder bag and place this intruder in the Room. This new Intruder doesn't perform any attacks (including Surprise Attacks) during the Action that summoned it.",
         "AlienHealth": 3,
         "AttackingTypes": [

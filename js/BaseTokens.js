@@ -7,6 +7,8 @@ const LarvaTokens =[
         "BagDevelopmentEffectTextCard": "Larva - Remove this token from the Intruder bag and add 1 Adult token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "Larva develops into an adult.",
         "SummoningText": "Danger level 1 Larva Appears.",
+        "BagDevReturnToBag": false,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -17,6 +19,8 @@ const LarvaTokens =[
         "BagDevelopmentEffectTextCard": "Larva - Remove this token from the Intruder bag and add 1 Adult token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "Larva develops into an adult.",
         "SummoningText": "Danger level 1 Larva Appears.",
+        "BagDevReturnToBag": false,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -27,6 +31,8 @@ const LarvaTokens =[
         "BagDevelopmentEffectTextCard": "Larva - Remove this token from the Intruder bag and add 1 Adult token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "Larva develops into an adult.",
         "SummoningText": "Danger level 1 Larva Appears.",
+        "BagDevReturnToBag": false,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -37,6 +43,8 @@ const LarvaTokens =[
         "BagDevelopmentEffectTextCard": "Larva - Remove this token from the Intruder bag and add 1 Adult token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "Larva develops into an adult.",
         "SummoningText": "Danger level 1 Larva Appears.",
+        "BagDevReturnToBag": false,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -47,6 +55,8 @@ const LarvaTokens =[
         "BagDevelopmentEffectTextCard": "Larva - Remove this token from the Intruder bag and add 1 Adult token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "Larva develops into an adult.",
         "SummoningText": "Danger level 1 Larva Appears.",
+        "BagDevReturnToBag": false,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -57,6 +67,8 @@ const LarvaTokens =[
         "BagDevelopmentEffectTextCard": "Larva - Remove this token from the Intruder bag and add 1 Adult token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "Larva develops into an adult.",
         "SummoningText": "Danger level 1 Larva Appears.",
+        "BagDevReturnToBag": false,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -67,6 +79,8 @@ const LarvaTokens =[
         "BagDevelopmentEffectTextCard": "Larva - Remove this token from the Intruder bag and add 1 Adult token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "Larva develops into an adult.",
         "SummoningText": "Danger level 1 Larva Appears.",
+        "BagDevReturnToBag": false,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -77,6 +91,8 @@ const LarvaTokens =[
         "BagDevelopmentEffectTextCard": "Larva - Remove this token from the Intruder bag and add 1 Adult token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "Larva develops into an adult.",
         "SummoningText": "Danger level 1 Larva Appears.",
+        "BagDevReturnToBag": false,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     } ]
 const CreeperTokens = [
@@ -88,6 +104,8 @@ const CreeperTokens = [
         "BagDevelopmentEffectTextCard": "Creeper - Remove this token from the Intruder bag and add 1 Breeder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "Creeper develops into a breeder.",
         "SummoningText": "Danger level 1 Creeper Appears.",
+        "BagDevReturnToBag": false,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -98,6 +116,8 @@ const CreeperTokens = [
         "BagDevelopmentEffectTextCard": "Creeper - Remove this token from the Intruder bag and add 1 Breeder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "Creeper develops into a breeder.",
         "SummoningText": "Danger level 1 Creeper Appears.",
+        "BagDevReturnToBag": false,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -108,6 +128,8 @@ const CreeperTokens = [
         "BagDevelopmentEffectTextCard": "Creeper - Remove this token from the Intruder bag and add 1 Breeder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "Creeper develops into a breeder.",
         "SummoningText": "Danger level 1 Creeper Appears.",
+        "BagDevReturnToBag": false,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     }
     ]
@@ -120,6 +142,8 @@ const AdultTokens = [
         "BagDevelopmentEffectTextCard": "Adult - All players roll for Noise in order. If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll. Return the Adult Intruder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "All players roll for Noise in order.  If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll.",
         "SummoningText": "Danger level 2 Adult Appears",
+        "BagDevReturnToBag": true,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -130,6 +154,8 @@ const AdultTokens = [
         "BagDevelopmentEffectTextCard": "Adult ? All players roll for Noise in order. If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll. Return the Adult Intruder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "All players roll for Noise in order.  If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll.",
         "SummoningText": "Danger level 2 Adult Appears",
+        "BagDevReturnToBag": true,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -140,6 +166,8 @@ const AdultTokens = [
         "BagDevelopmentEffectTextCard": "Adult ? All players roll for Noise in order. If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll. Return the Adult Intruder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "All players roll for Noise in order.  If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll.",
         "SummoningText": "Danger level 2 Adult Appears",
+        "BagDevReturnToBag": true,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -150,6 +178,8 @@ const AdultTokens = [
         "BagDevelopmentEffectTextCard": "Adult ? All players roll for Noise in order. If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll. Return the Adult Intruder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "All players roll for Noise in order.  If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll.",
         "SummoningText": "Danger level 2 Adult Appears",
+        "BagDevReturnToBag": true,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -160,6 +190,8 @@ const AdultTokens = [
         "BagDevelopmentEffectTextCard": "Adult ? All players roll for Noise in order. If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll. Return the Adult Intruder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "All players roll for Noise in order.  If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll.",
         "SummoningText": "Danger level 3 Adult Appears",
+        "BagDevReturnToBag": true,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -170,6 +202,8 @@ const AdultTokens = [
         "BagDevelopmentEffectTextCard": "Adult ? All players roll for Noise in order. If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll. Return the Adult Intruder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "All players roll for Noise in order.  If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll.",
         "SummoningText": "Danger level 3 Adult Appears",
+        "BagDevReturnToBag": true,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -180,6 +214,8 @@ const AdultTokens = [
         "BagDevelopmentEffectTextCard": "Adult ? All players roll for Noise in order. If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll. Return the Adult Intruder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "All players roll for Noise in order.  If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll.",
         "SummoningText": "Danger level 3 Adult Appears",
+        "BagDevReturnToBag": true,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -190,6 +226,8 @@ const AdultTokens = [
         "BagDevelopmentEffectTextCard": "Adult ? All players roll for Noise in order. If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll. Return the Adult Intruder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "All players roll for Noise in order.  If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll.",
         "SummoningText": "Danger level 3 Adult Appears",
+        "BagDevReturnToBag": true,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -200,6 +238,8 @@ const AdultTokens = [
         "BagDevelopmentEffectTextCard": "Adult ? All players roll for Noise in order. If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll. Return the Adult Intruder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "All players roll for Noise in order.  If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll.",
         "SummoningText": "Danger level 3 Adult Appears",
+        "BagDevReturnToBag": true,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -210,6 +250,8 @@ const AdultTokens = [
         "BagDevelopmentEffectTextCard": "Adult ? All players roll for Noise in order. If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll. Return the Adult Intruder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "All players roll for Noise in order.  If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll.",
         "SummoningText": "Danger level 4 Adult Appears",
+        "BagDevReturnToBag": true,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -220,6 +262,8 @@ const AdultTokens = [
         "BagDevelopmentEffectTextCard": "Adult ? All players roll for Noise in order. If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll. Return the Adult Intruder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "All players roll for Noise in order.  If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll.",
         "SummoningText": "Danger level 4 Adult Appears",
+        "BagDevReturnToBag": true,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     },
     {
@@ -230,6 +274,8 @@ const AdultTokens = [
         "BagDevelopmentEffectTextCard": "Adult ? All players roll for Noise in order. If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll. Return the Adult Intruder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "All players roll for Noise in order.  If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll.",
         "SummoningText": "Danger level 4 Adult Appears",
+        "BagDevReturnToBag": true,
+        "SummonReturnToBag": false,
         "Image Path": "~/img/"
     } ]
 const BreederTokens = [
@@ -241,6 +287,8 @@ const BreederTokens = [
         "BagDevelopmentEffectTextCard": "Breeder ? All players roll for Noise in order. If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll. Return the Breeder Intruder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "All players roll for Noise in order. If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll.",
         "SummoningText": "Danger level 3 Breeder Appears",
+        "BagDevReturnToBag": true,
+        "SummonReturnToBag": false,
         "Image Path": ""
     },
     {
@@ -251,6 +299,8 @@ const BreederTokens = [
         "BagDevelopmentEffectTextCard": "Breeder ? All players roll for Noise in order. If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll. Return the Breeder Intruder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "All players roll for Noise in order. If a player's Character is in Combat with an Intruder, this player does not perform a Noise roll.",
         "SummoningText": "Danger level 4 Breeder Appears",
+        "BagDevReturnToBag": true,
+        "SummonReturnToBag": false,
         "Image Path": ""
     } ];
 const QueenToken =
@@ -262,6 +312,8 @@ const QueenToken =
         "BagDevelopmentEffectTextCard": "Queen ? If there are any Characters in the Nest Room, place the Queen miniature in that Room and resolve an Encounter. If there are no Characters in the Nest (or its location has not been discovered yet), add an additional Egg token on the Intruder board. Return the Queen Intruder token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "If there are any Characters in the Nest Room, place the Queen miniature in that Room and resolve an Encounter. If there are no Characters in the Nest (or its location has not been discovered yet), add an additional Egg token on the Intruder board.",
         "SummoningText": "The Queen Appears! (danger level 4)",
+        "BagDevReturnToBag": false,
+        "SummonReturnToBag": false,
         "Image Path": ""
     }
    const baseBlankToken =
@@ -273,16 +325,17 @@ const QueenToken =
         "BagDevelopmentEffectTextCard": "Blank ? Add 1 Adult Intruder token to the Intruder bag. If there are no Adult Intruder tokens available, nothing happens. Return the Blank token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "Nothing happens.",
         "SummoningText": "Nothing appears",
+        "BagDevReturnToBag": true,
+        "SummonReturnToBag": true,
         "Image Path": ""
     };
 
 
 const baseAlienDict = {
-
+    0: "Blank",
     1: "Larvae",
     2: "Creepers",
     3: "Adults",
     4: "Breeders",
-    5: "Queen",
-    6: "Blank"
+    5: "Queen"
 }

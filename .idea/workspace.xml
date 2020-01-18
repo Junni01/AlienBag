@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29264c71-4230-4251-84f3-085de67f2b9c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/WarriorKnights/Index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WarriorKnights/Setup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Cards_and_Tokens.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Cards_and_Tokens.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/BaseAttackCards.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/BaseAttackCards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/BaseTokens.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/BaseTokens.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Game.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/VoidSeederTokens.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/VoidSeederTokens.js" afterDir="false" />
     </list>
@@ -17,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -47,6 +50,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Saku\WebstormProjects\AlienBag" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Saku\WebstormProjects\AlienBag\Assets\Fonts" />
     </key>
@@ -97,7 +103,9 @@
       <workItem from="1575911121473" duration="1208000" />
       <workItem from="1576087911869" duration="1022000" />
       <workItem from="1576130299939" duration="22686000" />
-      <workItem from="1576255003955" duration="18402000" />
+      <workItem from="1576255003955" duration="25303000" />
+      <workItem from="1576516870763" duration="2871000" />
+      <workItem from="1577380272482" duration="2775000" />
     </task>
     <task id="LOCAL-00001" summary="Added Void Seeders expansion data">
       <created>1576154149540</created>
@@ -113,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576272493126</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finishing touches on the Void Seeders expansion content">
+      <created>1576315028459</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576315028459</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,13 +141,14 @@
     </ignored-roots>
     <MESSAGE value="Added Void Seeders expansion data" />
     <MESSAGE value="New modals and functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="New modals and functionality" />
+    <MESSAGE value="Finishing touches on the Void Seeders expansion content" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finishing touches on the Void Seeders expansion content" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="113" width="1292" height="813" key="CommitChangelistDialog2" timestamp="1576272492051">
+    <state x="585" y="113" width="1292" height="813" key="CommitChangelistDialog2" timestamp="1576315027638">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="113" width="1292" height="813" key="CommitChangelistDialog2/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576272492051" />
+    <state x="585" y="113" width="1292" height="813" key="CommitChangelistDialog2/1920.-271.1050.1640/0.0.1920.1040@0.0.1920.1040" timestamp="1576315027638" />
     <state x="615" y="339" key="FileChooserDialogImpl" timestamp="1576257063875">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

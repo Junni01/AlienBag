@@ -1,0 +1,34 @@
+Height 47,50
+
+leveys 70.5	70
+
+
+pelaajakorti
+
+lenght 16.50
+
+width 67.50
+
+height 44.50
+
+Tower
+
+35
+
+x
+
+35
+
+
+Control markers
+
+34 x 28
+
+
+Crests
+
+19x19 
+
+playersbox 
+
+134.5 x 73.50
