@@ -324,7 +324,7 @@ const QueenToken =
         "DangerLevel": 0,
         "BagDevelopmentEffectTextCard": "Blank ? Add 1 Adult Intruder token to the Intruder bag. If there are no Adult Intruder tokens available, nothing happens. Return the Blank token to the Intruder bag.",
         "BagDevelopmentEffectTextApp": "Nothing happens.",
-        "SummoningText": "Nothing appears",
+        "SummoningText": "Place a Noise marker in each Corridor connected to the Room in which this Encounter took place",
         "BagDevReturnToBag": true,
         "SummonReturnToBag": true,
         "Image Path": ""

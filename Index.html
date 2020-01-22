@@ -692,19 +692,19 @@
     function addAliens() {
         let larva = document.getElementById("larvaInput").value;
         document.getElementById("larvaInput").value = 0;
-        if(larva > 0) addTokensToBag(1, larva)
+        if(larva > 0) { addTokensToBag(1, larva) }
         let creeper = document.getElementById("creeperInput").value;
         document.getElementById("creeperInput").value = 0;
-        if (creeper > 0) { addTokensToBag(2, creeper)
+        if (creeper > 0) { addTokensToBag(2, creeper) }
         let adult = document.getElementById("adultInput").value;
         document.getElementById("adultInput").value = 0;
-        if (adult > 0) addTokensToBag(3, adult)
+        if (adult > 0) { addTokensToBag(3, adult) }
         let breeder = document.getElementById("breederInput").value;
         document.getElementById("breederInput").value = 0;
-        if (breeder > 0) addTokensToBag(4, breeder)
+        if (breeder > 0) {addTokensToBag(4, breeder)}
         let queen = document.getElementById("queenInput").value;
         document.getElementById("queenInput").value = 0;
-        console.log(queen)
+        console.log(queen);
         if (queen > 0) {
             addTokensToBag(5, 1)
         }

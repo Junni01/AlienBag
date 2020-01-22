@@ -227,7 +227,7 @@ function setupAlienBag(players) {
     console.log(alienBag)
     document.getElementById("playerSelector").style.display = 'none';
     document.getElementById("playerTurnWindows").style.display = '';
-    document.getElementById("eventWindows").style.display = '';
+   //document.getElementById("eventWindows").style.display = '';
     document.getElementById("shuffleFooter").style.display = ''
 
     playerCount = players;
@@ -457,10 +457,12 @@ function spawnAlien() {
             document.getElementById("tokenName").innerText = token.AlienName;
             document.getElementById("dangerTitle").innerText = "Danger Level:"
             document.getElementById("dangerLevel").innerText = token.DangerLevel;
+            document.getElementById("tokenDescription").innerText = "";
         } else {
-            document.getElementById("dangerTitle").innerText = ""
+            document.getElementById("dangerTitle").innerText = "";
             document.getElementById("dangerLevel").innerText = "";
             document.getElementById("tokenName").innerText = "Nothing appears";
+            document.getElementById("tokenDescription").innerText = token.SummoningText;
         }
 
 
