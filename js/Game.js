@@ -257,6 +257,14 @@ function shufflePanicDeck() {
     console.log(panicDrawPile);
 }
 
+function shufflePiles() {
+    console.log("Shuffling Alien Piles");
+    shuffle(breederPile);
+    shuffle(adultPile);
+    shuffle(creeperPile);
+    shuffle(larvaPile);
+}
+
 // Token Bag
 function drawFromBag() {
     let drawnToken = alienBag.pop();
@@ -302,7 +310,8 @@ function drawFromBag() {
                 break;
         }
     }
-    shuffleBag()
+    shuffleBag();
+    shufflePiles();
     return drawnToken;
 }
 function drawFromVoidSeederBag() {
@@ -403,6 +412,7 @@ function addTokensToBag(type, amount) {
 
 
     shuffleBag();
+    shufflePiles();
 
 
 }
@@ -540,6 +550,7 @@ function initiateBagDevelopment() {
         }
 
         shuffleBag();
+        shufflePiles();
 
     } else if (enemyType === 2) {
         initiateVoidSeederBagDevelopment();
@@ -1018,6 +1029,7 @@ function fullScreen() {
     }
 }
 function shuffle(array) {
+if(array.length > 1) {
     console.log("S H U F F L E")
     let i, j = 0, temp = null;
 
@@ -1027,4 +1039,9 @@ function shuffle(array) {
         array[i] = array[j];
         array[j] = temp
     }
+} else {
+    console.log("Less than 2 objests in the array, no need to shuffle");
+}
+
+
 };
