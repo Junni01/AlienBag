@@ -99,7 +99,6 @@ let players = [
 
 var enemyType = 1;
 
-
 // Set up according to player amount and enemy type.
 function setupAlienBag(players) {
     console.log("setting up game for " + players + " players" + ", the enemy is " + enemies[enemyType]);

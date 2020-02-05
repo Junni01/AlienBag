@@ -1,0 +1,16 @@
+{
+  "name": "Alien Bag",
+  "short_name": "Alien Bag",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000000",
+  "description": "Companion app for Nemesis board game",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "./img/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
