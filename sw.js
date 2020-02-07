@@ -19,6 +19,7 @@ this.addEventListener('install', async function() {
         '/css/bootstrap-grid.css',
         '/css/bootstrap-reboot.css',
         '/css/styles.css',
+        'Assets/Fonts/venus_rising_rg.ttf'
     ])
 })
 

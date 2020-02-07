@@ -45,6 +45,7 @@
     font-family: "venus rising" !important;
 }
 body {
+    overscroll-behavior: contain;
 background-color: black;
     font-family: "venus rising";
     padding-top: 10px;
