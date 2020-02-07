@@ -258,10 +258,14 @@ function shufflePanicDeck() {
 
 function shufflePiles() {
     console.log("Shuffling Alien Piles");
-    shuffle(breederPile);
-    shuffle(adultPile);
-    shuffle(creeperPile);
-    shuffle(larvaPile);
+    if(enemyType == 1) {
+        shuffle(breederPile);
+        shuffle(adultPile);
+        shuffle(creeperPile);
+        shuffle(larvaPile);
+    } else if(enemyType == 2) {
+        shuffle(voidSeederTokenPile);
+    }
 }
 
 // Token Bag
@@ -446,7 +450,10 @@ function addTokensToVoidSeederBag(type, amount) {
                 break;
         }
     }
+    shuffleBag();
+    shufflePiles();
     console.log(alienBag)
+
 }
 function removeTokensFromVoidSeekerBag(type, amount) {
 
