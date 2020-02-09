@@ -31,8 +31,14 @@ var breederPile = BreederTokens;
 // Void Seeders Token Pile
 var voidSeederTokenPile = voidSeederTokens;
 
-const noiseDie = [1,1,2,2,3,3,4,4,5,6]
-const attackDie = [1,2,3,4,5,6]
+// Carnomorph Token Piles
+var blueMetagorgerPile = blueMetagorgerTokens;
+var redMetagorgerPile = redMetagorgerTokens;
+var shamblerPile = shamblerTokens;
+var fleshBeastPile = fleshBeastTokens;
+
+const noiseDie = [1,1,2,2,3,3,4,4,5,6];
+const attackDie = [1,2,3,4,5,6];
 
 
 const enemies = {
@@ -44,6 +50,7 @@ const enemies = {
 
 let BaseIntruders = 1;
 let VoidSeeders = 2;
+let Carnomorphs = 3;
 
 const playerColors = {
     1: "Blue",
@@ -132,9 +139,11 @@ function setupAlienBag(players) {
         shuffle(attackDrawPile);
         document.getElementById("baseAlienAddModal").style.display = '';
         document.getElementById("voidSeederAddModal").style.display = 'none';
+        document.getElementById("carnoAddModal").style.display = 'none';
 
         document.getElementById("baseAlienHealthButtons").style.display = '';
         document.getElementById("voidSeederHealthButtons").style.display = 'none';
+        document.getElementById("carnoHealthButtons").style.display = 'none';
 
 
         document.getElementById("panicButton").style.display = 'none';
@@ -187,8 +196,10 @@ function setupAlienBag(players) {
 
         document.getElementById("baseAlienAddModal").style.display = 'none';
         document.getElementById("voidSeederAddModal").style.display = '';
+        document.getElementById("carnoAddModal").style.display = 'none';
 
         document.getElementById("baseAlienHealthButtons").style.display = 'none';
+        document.getElementById("carnoHealthButtons").style.display = 'none';
         document.getElementById("voidSeederHealthButtons").style.display = '';
 
         document.getElementById("panicButton").style.display = '';
@@ -221,6 +232,68 @@ function setupAlienBag(players) {
 
     }
 
+    if (enemyType === 3) {
+
+        shuffle(blueMetagorgerPile);
+        shuffle(redMetagorgerPile);
+        shuffle(shamblerPile);
+        shuffle(fleshBeastPile);
+
+        alienDict = carnoAlienDict;
+        BlankToken = carnoBlankToken;
+        alienBag.push(BlankToken);
+
+        alienBag.push(blueMetagorgerPile.pop())
+        alienBag.push(blueMetagorgerPile.pop())
+
+        let redMetagorgerAmount = 2 + players;
+        for (let b = 0; b < redMetagorgerAmount; b++) {
+            alienBag.push(redMetagorgerPile.pop());
+        }
+
+        eventDrawPile = carnoEventCards;
+        shuffle(eventDrawPile);
+
+        attackDrawPile = carnoAttackCards;
+        shuffle(attackDrawPile);
+        document.getElementById("baseAlienAddModal").style.display = 'none';
+        document.getElementById("voidSeederAddModal").style.display = 'none';
+        document.getElementById("carnoAddModal").style.display = '';
+
+        document.getElementById("baseAlienHealthButtons").style.display = 'none';
+        document.getElementById("voidSeederHealthButtons").style.display = 'none';
+        document.getElementById("carnoHealthButtons").style.display = '';
+
+
+        document.getElementById("panicButton").style.display = 'none';
+
+        document.getElementById("attackInfo").innerHTML =
+            `
+                                    <button type="button" class="btn btn-dark attack-button"
+                                            onclick="resolveMetagorgerDefaultAttack()"
+                                            data-toggle="modal" data-target="#attackModal">
+                                        Metagorger
+                                    </button>
+                                    <button type="button" class="btn btn-dark attack-button"
+                                            onclick="resolveAnAttack(3)"
+                                            data-toggle="modal" data-target="#attackModal">
+                                        Shambler
+                                    </button>
+                                    <button type="button" class="btn btn-dark attack-button"
+                                            onclick="resolveAnAttack(4)"
+                                            data-toggle="modal" data-target="#attackModal">
+                                        Fleshbeast
+                                    </button>
+                                    <button type="button" class="btn btn-dark attack-button"
+                                            onclick="resolveAnAttack(5)"
+                                            data-toggle="modal" data-target="#attackModal">
+                                        Butcher
+                                    </button>
+                            `
+
+    }
+
+
     shuffle(alienBag);
     console.log("alien bag set up, contents: ");
     console.log(alienBag)
@@ -228,7 +301,6 @@ function setupAlienBag(players) {
     document.getElementById("playerTurnWindows").style.display = '';
    //document.getElementById("eventWindows").style.display = '';
     document.getElementById("shuffleFooter").style.display = ''
-
     playerCount = players;
 // document.getElementById("players").innerText = playerCount + "P";
 
@@ -258,13 +330,18 @@ function shufflePanicDeck() {
 
 function shufflePiles() {
     console.log("Shuffling Alien Piles");
-    if(enemyType == 1) {
+    if(enemyType === 1) {
         shuffle(breederPile);
         shuffle(adultPile);
         shuffle(creeperPile);
         shuffle(larvaPile);
-    } else if(enemyType == 2) {
+    } else if(enemyType === 2) {
         shuffle(voidSeederTokenPile);
+    } else if(enemyType === 3) {
+        shuffle(blueMetagorgerPile);
+        shuffle(redMetagorgerPile);
+        shuffle(shamblerPile);
+        shuffle(fleshBeastPile);
     }
 }
 
@@ -367,6 +444,56 @@ function drawFromVoidSeederBag() {
     return drawnToken;
 
 }
+function drawFromCarnoBag() {
+    let drawnToken = alienBag.pop();
+    console.log("drew alien from bag: ")
+    console.log(drawnToken)
+    console.log("bag now contains " + alienBag.length + " tokens")
+    if (drawnToken.AlienId === 0 && alienBag.length === 0) {
+        console.log("drew blank token from bag and it was the last token.")
+        alienBag.push(drawnToken);
+        console.log("returned blank token to bag")
+        if (redMetagorgerPile.length === 0 && blueMetagorgerPile.length === 0) {
+            console.log("Pile of metagorger tokens were empty, nothing added to bag")
+        } else {
+            addCarnoToBag(1, 1);
+            console.log("Metagorger pile were not empty, added 1 metagorger token into the bag")
+        }
+
+    } else if (drawnToken.AlienId === 0) {
+        alienBag.push(drawnToken);
+        console.log("Drawn token was blank, returning it to bag")
+
+    } else {
+        switch (drawnToken.AlienId) {
+            case 1:
+                blueMetagorgerPile.push(drawnToken)
+                console.log("token was blue metagorger returning it to blue metagorger pile")
+                shuffle(blueMetagorgerPile)
+                break;
+            case 2:
+                redMetagorgerPile.push(drawnToken)
+                console.log("token was red metagorger, returning it to red metagorger pile")
+                shuffle(redMetagorgerPile)
+                break;
+            case 3:
+                shamblerPile.push(drawnToken)
+                console.log("token was Shambler, returning it to Shambler pile")
+                shuffle(shamblerPile)
+                break;
+            case 4:
+                fleshBeastPile.push(drawnToken)
+                console.log("token was Fleshbeast, returning it to Fleshbeast pile")
+                shuffle(fleshBeastPile)
+                break;
+        }
+    }
+    shuffleBag();
+    shufflePiles();
+    return drawnToken;
+}
+
+// Functions to Add/Remove tokens to the alien bag
 function addTokensToBag(type, amount) {
 
     switch (type) {
@@ -455,6 +582,45 @@ function addTokensToVoidSeederBag(type, amount) {
     console.log(alienBag)
 
 }
+function addCarnoToBag(type, amount) {
+    switch (type) {
+        case 1:
+        case 2:
+            if (amount > 0) {
+
+                for (let i = 0; i < amount; i++){
+                    if(redMetagorgerPile.length > 0) {
+                        alienBag.push(redMetagorgerPile.pop())
+                    } else if(blueMetagorgerPile.length > 0) {
+                        alienBag.push(blueMetagorgerPile.pop())
+                    } else {
+                        console.log("Both metagorger piles empty, can't add metagorgers");
+                    }
+
+                }
+
+            }
+            break;
+
+        case 3:
+            if (amount > 0) {
+                for (let i = 0; i < amount && shamblerPile.length > 0; i++)
+                    alienBag.push(shamblerPile.pop())
+            }
+            break;
+        case 4:
+            if (amount > 0) {
+                for (let i = 0; i < amount && fleshBeastPile.length > 0; i++)
+                    alienBag.push(fleshBeastPile.pop())
+            }
+            break;
+        case 5:
+            if (amount > 0) {
+                alienBag.push(butcherToken)
+            }
+            break;
+    }
+};
 function removeTokensFromVoidSeekerBag(type, amount) {
 
     var removeIndex = alienBag.map(function(item) {return item.AlienId; }).indexOf(type);
@@ -462,11 +628,13 @@ function removeTokensFromVoidSeekerBag(type, amount) {
     var spliced = alienBag.splice(removeIndex, 1);
     console.log(spliced)
 }
+
 function spawnAlien() {
 
     let token;
 
     if (enemyType === BaseIntruders) {
+
         token = drawFromBag();
 
         if (token.AlienId !== 0) {
@@ -481,8 +649,8 @@ function spawnAlien() {
             document.getElementById("tokenDescription").innerText = token.SummoningText;
         }
 
-
-    } else if (enemyType === VoidSeeders) {
+    }
+    else if (enemyType === VoidSeeders) {
 
         token = drawFromVoidSeederBag();
 
@@ -503,14 +671,26 @@ function spawnAlien() {
             document.getElementById("tokenDescription").innerText = token.SummoningText;;
         }
 
-    } else {
+    }
+    else if(enemyType === Carnomorphs) {
+
+        token = drawFromCarnoBag();
+
+        if (token.AlienId !== 0) {
+            document.getElementById("tokenName").innerText = token.AlienName;
+            document.getElementById("dangerTitle").innerText = "Danger Level:"
+            document.getElementById("dangerLevel").innerText = token.DangerLevel;
+            document.getElementById("tokenDescription").innerText = "";
+        } else {
+            document.getElementById("dangerTitle").innerText = "";
+            document.getElementById("dangerLevel").innerText = "";
+            document.getElementById("tokenName").innerText = "Nothing appears";
+            document.getElementById("tokenDescription").innerText = token.SummoningText;
+        }
+    }
+    else {
         document.getElementById("tokenName").innerText = "Error";
     }
-
-
-    //document.getElementById("tokenDescription").innerText = token.SummoningText;
-    //mySound.play();
-
 
 }
 
@@ -560,7 +740,9 @@ function initiateBagDevelopment() {
 
     } else if (enemyType === 2) {
         initiateVoidSeederBagDevelopment();
-    }
+    } else if (enemyType === 3) {
+      initiateCarnoBagDevelopment();
+    };
 
 }
 function initiateVoidSeederBagDevelopment() {
@@ -595,6 +777,38 @@ function initiateVoidSeederBagDevelopment() {
 
     document.getElementById("bagDevMessage").innerText = message;
     shuffleBag();
+
+}
+function initiateCarnoBagDevelopment() {
+
+        let bagToken = alienBag.pop()
+        console.log("Drew token from bag:")
+        console.log(bagToken)
+        document.getElementById("bagDevMessage").innerText = bagToken.BagDevelopmentEffectTextApp;
+        switch (bagToken.AlienId) {
+            case 1:
+                blueMetagorgerPile.push(bagToken);
+                addCarnoToBag(1,1);
+                break;
+
+            case 2:
+                alienBag.push(bagToken)
+                break;
+            case 3:
+            case 4:
+                alienBag.push(bagToken)
+                break;
+            case 5:
+                console.log("Butcher drawn, not returning it to bag")
+                break;
+            case 0:
+                addCarnoToBag(1,1);
+                alienBag.push(bagToken)
+                break;
+        }
+
+        shuffleBag();
+        shufflePiles();
 
 }
 
@@ -647,6 +861,12 @@ function drawAttackCard() {
     return drawnCard;
 
 
+}
+function resolveMetagorgerDefaultAttack() {
+    if(enemyType === 3) {
+        document.getElementById("attackDesc").innerText = "Character suffers 1 Light wound, gets 1 Contamination Card. If the character has no mutation cards, draw 2 and pick one to keep. Remove the attacking Metagorger miniature from the board."
+        addCarnoToBag(3,1);
+    }
 }
 
 // Health Check
@@ -808,6 +1028,43 @@ function voidSeederHealthCheck(type) {
 
 
 }
+function carnoHealthCheck(type) {
+
+    let health = 0;
+
+    if (type === 1) {
+        let card = drawAttackCard()
+        console.log("attack card:")
+        console.log(card)
+        if (card.AlienHealthMetagorger !== 0) {
+            document.getElementById("healthInfo").innerText = "";
+            document.getElementById("healthInfo2").innerText = "";
+            document.getElementById("healthAmount").innerText = card.AlienHealthMetagorger
+        } else {
+            let eCard = drawEventCardForRetreat()
+            document.getElementById("healthAmount").innerText = "";
+            document.getElementById("healthInfo").innerText = "Metagorger flees!"
+            document.getElementById("healthInfo2").innerText = "direction: " + eCard.Direction
+        }
+
+    } else {
+
+        let card = drawAttackCard()
+        console.log("attack card:")
+        console.log(card)
+        if (card.AlienHealth !== 0) {
+            document.getElementById("healthInfo").innerText = "";
+            document.getElementById("healthInfo2").innerText = "";
+            document.getElementById("healthAmount").innerText = card.AlienHealth
+        } else {
+            let eCard = drawEventCardForRetreat()
+            document.getElementById("healthAmount").innerText = "";
+            document.getElementById("healthInfo").innerText = "Intruder flees!"
+            document.getElementById("healthInfo2").innerText = "direction: " + eCard.Direction
+        }
+    }
+
+}
 
 //Event Cards
 function drawEventCard() {
@@ -838,7 +1095,9 @@ function resolveEvent() {
     console.log(eventCard)
     let groups = "";
     for (let group of eventCard.Movers) {
+
         console.log(group)
+
         groups += alienDict[group] + " ";
     }
 
@@ -990,6 +1249,7 @@ function rollForNoise() {
 
 function setEnemy(enemyId) {
     enemyType = enemyId;
+    console.log("Enemy type is now: " + enemyType)
 }
 
 

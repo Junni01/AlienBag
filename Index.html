@@ -27,6 +27,9 @@
 <script src="js/VoidSeederAttackCards.js"></script>
 <script src="js/VoidSeederTokens.js"></script>
 <script src="js/VoidSeederPanicCards.js"></script>
+<script src="js/CarnoTokens.js"></script>
+<script src="js/CarnoAttackCards.js"></script>
+<script src="js/CarnoEventCards.js"></script>
 <script src="js/Game.js"></script>
 
 <body onload="onLoadAsync()">
@@ -68,6 +71,8 @@
             <button type="button" class="btn btn-secondary" value="2" onclick="setEnemy(2)">Void
                 Seeders
             </button>
+         <button type="button" class="btn btn-secondary" value="3" onclick="setEnemy(3)">Carnomorphs
+         </button>
         </div>
         <div style="color: white">Feedback: <a href="mailto:alienbagapp@gmail.com">alienbagapp@gmail.com</a></div>
     </div>
@@ -158,7 +163,24 @@
 
 
                             </div>
-
+                            <div class="text-center" id="carnoHealthButtons">
+                                <div class="row text-center">
+                                    <div class="col-sm-12 text-center">
+                                        <button type="button" class="btn btn-dark" onclick="carnoHealthCheck(1)"
+                                                data-toggle="modal" data-target="#healthModal">
+                                            Metagorger
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row text-center text-center">
+                                    <div class="col-sm-12">
+                                        <button type="button" class="btn btn-dark" onclick="carnoHealthCheck(2)"
+                                                data-toggle="modal" data-target="#healthModal">
+                                            Shambler<br>Fleshbeast<br>Butcher
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                         <div class="card-footer text-center">
@@ -537,6 +559,67 @@
             </div>
 
         </div>
+        <div class="modal-content text-center" id="carnoAddModal">
+
+            <!-- Modal body -->
+            <div class="modal-body text-center" style="font-size: 30px; margin-left: 25%; margin-right: 25%;">
+                <div class="row">
+                    <div class="col-sm-12">
+                        Metagorger
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <input type="number" readonly id="metagorgerInput" class="form-control-lg"
+                               min="0" value="0">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        Shambler
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input type="number"readonly id="shamblerInput" class="form-control-lg"
+                               min="0" value="0">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        Fleshbeast
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input type="number" readonly id="fleshbeastInput" class="form-control-lg"
+                               min="0" value="0">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        Butcher
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input type="number" readonly id="butcherInput" class="form-control-lg"
+                               value="0" min="0" max="1" >
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer justify-content-start">
+                <button type="button" class="btn btn-dark btn-lg btn-block" id="carnoaddButton" onclick="addCarnos()"
+                        data-dismiss="modal"
+                        style="font-size: 30px">Ok
+                </button>
+
+            </div>
+
+        </div>
         <div class="modal-content text-center" id="voidSeederAddModal">
 
             <!-- Modal body -->
@@ -712,9 +795,6 @@
         }
     }
 
-
-
-
     function addAliens() {
 
         let larva = document.getElementById("larvaInput").value;
@@ -758,20 +838,37 @@
 
     }
 
-    function sound(src) {
-        this.sound = document.createElement("audio");
-        this.sound.src = src;
-        this.sound.setAttribute("preload", "auto");
-        this.sound.setAttribute("controls", "none");
-        this.sound.style.display = "none";
-        document.body.appendChild(this.sound);
-        this.play = function () {
-            this.sound.play();
+    function addCarnos() {
+
+        let metagorger = document.getElementById("metagorgerInput").value;
+        $("#metagorgerInput").val(0);
+        if(metagorger > 0) {
+            addCarnoToBag(1, metagorger)
         }
-        this.stop = function () {
-            this.sound.pause();
+
+        let shambler = document.getElementById("shamblerInput").value;
+        $("#shamblerInput").val(0);
+        if (shambler > 0) {
+            addCarnoToBag(3, shambler)
+        }
+
+        let fleshbeast = document.getElementById("fleshbeastInput").value;
+        $("#fleshbeastInput").val(0);
+        if (fleshbeast > 0) {
+            addCarnoToBag(4, fleshbeast)
+        }
+
+        let butcher = document.getElementById("butcherInput").value;
+        $("#butcherInput").val(0);
+        if (butcher > 0) {
+            addCarnoToBag(5, 1)
         }
     }
+
+
+
+
+
     window.onbeforeunload = function() {
         return true;
     }

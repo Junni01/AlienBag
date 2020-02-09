@@ -1,0 +1,21 @@
+﻿ID,AttackName,AttackDescriptionApp,AttackDescriptionCard,AlienHealth,AlienHealthMetagorger,AttackingTypes,SpecialRule
+1,Devour,"If the Character has at least 1 Serious Wound, they die. If not, the Character suffers 1 Serious Wound. The Butcher removes all its Injury Markers.","If the Character has at least 1 Serious Wound, they die. If not, the Character suffers 1 Serious Wound. The Butcher removes all its Injury Markers.",3,0,[5],0
+2,Devour,"If the Character has at least 1 Serious Wound, they die. If not, the Character suffers 1 Serious Wound. The Butcher removes all its Injury Markers.","If the Character has at least 1 Serious Wound, they die. If not, the Character suffers 1 Serious Wound. The Butcher removes all its Injury Markers.",5,1,[5],0
+3,Spawn,Place a Metagorger miniature in the Room. The Character gets a Slime marker.,Place a Metagorger miniature in the Room. The Character gets a Slime marker.,4,1,"[3,4]",0
+4,Spawn,Place a Metagorger miniature in the Room. The Character gets a Slime marker.,Place a Metagorger miniature in the Room. The Character gets a Slime marker.,7,0,"[3,4]",0
+5,Bash,The Caracter suffers 1 Serious Wound and get 1 Contamination Card.,The Caracter suffers 1 Serious Wound and get 1 Contamination Card.,5,0,"[4,5]",0
+6,Bash,The Caracter suffers 1 Serious Wound and get 1 Contamination Card.,The Caracter suffers 1 Serious Wound and get 1 Contamination Card.,0,2,"[4,5]",0
+7,Regurgiate,The Character gets a Slime marker and 1 Contamination Card. Place an Intruder Carcass token in the Room.,The Character gets a Slime marker and 1 Contamination Card. Place an Intruder Carcass token in the Room.,5,2,"[3,4,5]",0
+8,Regurgiate,The Character gets a Slime marker and 1 Contamination Card. Place an Intruder Carcass token in the Room.,The Character gets a Slime marker and 1 Contamination Card. Place an Intruder Carcass token in the Room.,4,3,"[3,4,5]",0
+9,Slash,The Character suffers 1 Light Wound and gets 1 Contamination Card.,The Character suffers 1 Light Wound and gets 1 Contamination Card.,0,2,"[3,4,5]",0
+10,Slash,The Character suffers 1 Light Wound and gets 1 Contamination Card.,The Character suffers 1 Light Wound and gets 1 Contamination Card.,6,1,"[3,4,5]",0
+11,Slash,The Character suffers 1 Light Wound and gets 1 Contamination Card.,The Character suffers 1 Light Wound and gets 1 Contamination Card.,3,1,"[3,4,5]",0
+12,Bite,"If the Character has 2 Serious Wounds, they die. If not, they suffer 1 Serious Wound.","If the Character has 2 Serious Wounds, they die. If not, they suffer 1 Serious Wound.",4,2,"[3,4,5]",0
+13,Bite,"If the Character has 2 Serious Wounds, they die. If not, they suffer 1 Serious Wound.","If the Character has 2 Serious Wounds, they die. If not, they suffer 1 Serious Wound.",5,1,"[3,4,5]",0
+14,Bite,"If the Character has 2 Serious Wounds, they die. If not, they suffer 1 Serious Wound.","If the Character has 2 Serious Wounds, they die. If not, they suffer 1 Serious Wound.",8,1,"[3,4,5]",0
+15,Bite,"If the Character has 2 Serious Wounds, they die. If not, they suffer 1 Serious Wound.","If the Character has 2 Serious Wounds, they die. If not, they suffer 1 Serious Wound.",6,3,"[3,4,5]",0
+16,Whiplash,The Character suffers 2 Light Wounds and 1 Contamination Card.,The Character suffers 2 Light Wounds and 1 Contamination Card.,7,3,"[3,4,5]",0
+17,Whiplash,The Character suffers 2 Light Wounds and 1 Contamination Card.,The Character suffers 2 Light Wounds and 1 Contamination Card.,0,0,"[3,4,5]",0
+18,Whiplash,The Character suffers 2 Light Wounds and 1 Contamination Card.,The Character suffers 2 Light Wounds and 1 Contamination Card.,0,1,"[3,4,5]",0
+19,Whiplash,The Character suffers 2 Light Wounds and 1 Contamination Card.,The Character suffers 2 Light Wounds and 1 Contamination Card.,8,1,"[3,4,5]",0
+20,Whiplash,The Character suffers 2 Light Wounds and 1 Contamination Card.,The Character suffers 2 Light Wounds and 1 Contamination Card.,4,1,"[3,4,5]",0
